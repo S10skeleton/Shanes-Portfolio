@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    background-color: #d4c490;
+  }
+  
+  .header {
+    padding: 30px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    background-color: #0d1316;
+    color: #ffd000;
+  }
+  
+  .header h1 {
+    display: inline-block;
+    font-size: 55px;
+    margin-left: 55px;
+    text-decoration: underline;
+  }
+  
+  .header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 40px;
+  }
+  
+  .header div ul li {
+    display: inline-block;
+    margin-left: 45px;
+  }
+  
+  a {
+    color: #ffd000;
+    text-decoration: none;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  .hero {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("./Coding.webp");
+    background-size: cover;
+    background-position: center;
+    
+  }
+  
+  #Stop {
+    text-align: center;
+    color: #ffd000;
+    font-size: 35px;
+    margin-top: 5px;
+    
+  }
+
+  
+  .content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  .Side {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: left;
+    width: 15%;
+    height: 100%;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: #0c0c08;
+    color: #ffd000;
+    border-radius: 0px 15px 15px 0px;
+  }
+  
+  
+  
+  .About-Me h3 {
+    margin-top: 120px;
+    margin-bottom: 250px;
+    text-align: center;
+    font-size: 35px;
+    transform: rotate(-15deg);
+  }
+  
+  .Work h3 {
+    margin-bottom: 250px;
+    text-align: center;
+    font-size: 35px;
+    transform: rotate(-15deg);
+
+  }
+  
+  .Contact-Me h3 {
+    margin-bottom: 250px;
+    text-align: center;
+    font-size: 35px;
+    transform: rotate(-15deg);
+
+  }
+  
+  .About {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: #000000;
+    
+  }
+
+  .float-right {
+    float: right;
+  }
+
+section {
+  --background: rgb(29, 28, 28);
+    
+}
+
+.Project1 img {
+  max-height: 500px;
+  
+}
+
+.Project2 img {
+  max-height: 200px;
+}
+
+.Project3 img {
+  max-height: 200px;
+}
+
+.Project4 img {
+  max-height: 200px;
+}
+
+.Project5 img {
+  max-height: 200px;
+}
+
+.Projects {
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+    
+}
+  
+  .Project1 {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 600px;
+    width: auto;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: var(--background);
+    color: #ffffff;
+  }
+  
+  .Project2 {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 400px;
+    width: 600px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: var(--background);
+    color: #ffffff;
+  }
+
+  .Project3 {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 400px;
+    width: 600px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: var(--background);
+    color: #ffffff;
+  }
+  .Project4 {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 400px;
+    width: 600px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: var(--background);
+    color: #ffffff;
+  }
+
+  .Project5 {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 400px;
+    width: 600px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: var(--background);
+    color: #ffffff;
+  }
+  
+ 
+
+  .Project1 h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+  
+  .Project2 h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+  
+  .Project3 h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+  
+  .Project4 h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+  
+  .Project5 h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+
+  .footer {
+    margin-top: 250px;
+    padding: 30px;
+    clear: both;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .footer h2 {
+    font-size: 20px;
+  }
