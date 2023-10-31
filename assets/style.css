@@ -53,8 +53,9 @@ p {
 }
 .image1 {
   position: relative;
-  height: 200px;
+  height: 300px;
   width: 1800px;
+  object-fit: cover;  
   top: 0;
   left: 200px;
   }
@@ -62,7 +63,7 @@ p {
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 200px;
+  width: 300px;
  }
 
 #Stop {
@@ -247,6 +248,7 @@ section {
 }
 
 #List {
+  margin-top: 100px;
   list-style: none;
   color: rgb(0, 0, 0);
   text-align: center;
@@ -255,7 +257,7 @@ section {
 }
 
 .footer {
-  margin-top: 250px;
+  margin-top: 50px;
   padding: 30px;
   clear: both;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
