@@ -3,11 +3,11 @@
   padding: 0;
   margin: 0;
 }
-
+/* I chose a subtle color for the background */
 body {
   background-color: #d4c490;
 }
-
+/* The header is fairly simple with a color scheme I feel stands out  */
 .header {
   padding: 30px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -45,7 +45,7 @@ p {
   font-size: 25px;
 }
 
-
+/* Getting these 2 images to display properly and in the right place needs a lot more practice 😂   */
 .parent {
   position: relative;
   top: 0;
@@ -129,7 +129,7 @@ p {
 section {
   --background: rgb(29, 28, 28);
 }
-
+/* Keeping the first project larger and displaying the rest in equal sized blocks  */
 .Project1 img {
   max-height: 500px;
   border-radius: 15px;
@@ -255,7 +255,7 @@ section {
   padding: 16px;
   text-decoration: none;  
 }
-
+/* small simple footer at the end  */
 .footer {
   margin-top: 50px;
   padding: 30px;
@@ -267,4 +267,9 @@ section {
 
 .footer h2 {
   font-size: 20px;
+}
+/* making adjustments to the way the application reacts to different screen sized  */
+@media screen and (max width: 992px{
+
+  
 }
