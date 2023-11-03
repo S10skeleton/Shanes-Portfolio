@@ -1,4 +1,4 @@
-## Challenge 02
+## Challenge 02 Shanes Personalized Portfolio
 
 # About
 
