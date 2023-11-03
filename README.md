@@ -6,3 +6,5 @@ This is the CSS challenge 02.
 Apologies I know the code is chaos
 Im working on cleaning it up but wanted the main homework 
 turned in. 
+
+![Page](./assets/Screenshot%202023-11-02%20202050.png)
