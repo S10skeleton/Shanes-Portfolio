@@ -269,7 +269,11 @@ section {
   font-size: 20px;
 }
 /* making adjustments to the way the application reacts to different screen sized  */
-@media screen and (max width: 992px{
+@media screen and (max width: 992px) {
+
+  .Projects {
+    flex-direction: column;
+  }
 
   
 }
