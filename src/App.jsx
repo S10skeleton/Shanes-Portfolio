@@ -1,60 +1,40 @@
-import {useState} from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 
-function AboutMe() {
-  const [count, setCount] = useState(0)
-  
-  return (
-    <div>
-      <h2>About Me</h2>
-      <p>This section will contain information about me.</p>
-    </div>
-  );
-}
-
-function Portfolio() {
-  return (
-    <div>
-      <h2>Portfolio</h2>
-      <p>This section will showcase my projects.</p>
-    </div>
-  );
-}
-
-function Contact() {
-  return (
-    <div>
-      <h2>Contact</h2>
-      <p>This section will have a contact form.</p>
-    </div>
-  );
-}
-
-function Resume() {
-  return (
-    <div>
-      <h2>Resume</h2>
-      <p>This section will include my resume and skills.</p>
-    </div>
-  );
-}
+// Import your components
+import AboutMe from './components/AboutMe'; // Assume these are separate component files
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+import Resume from './components/Resume';
 
 function App() {
   return (
-    <div className="App">
-      <header>
-        <h1>My Portfolio</h1>
-      </header>
-      <main>
-        <AboutMe />
-        <Portfolio />
-        <Contact />
-        <Resume />
-      </main>
-      <footer>
-        <p>Footer content here.</p>
-      </footer>
-    </div>
+    <Router>
+      <div className="App">
+        <header>
+          <nav>
+            <ul>
+              <li><Link to="/">About Me</Link></li>
+              <li><Link to="/portfolio">Portfolio</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
+              <li><Link to="/resume">Resume</Link></li>
+            </ul>
+          </nav>
+        </header>
+        <main>
+          <Routes>
+            <Route path="/" element={<AboutMe />} exact />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/resume" element={<Resume />} />
+          </Routes>
+        </main>
+        <footer>
+          <p>Footer content here.</p>
+        </footer>
+      </div>
+    </Router>
   );
 }
 
