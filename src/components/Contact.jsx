@@ -23,7 +23,7 @@ function Contact() {
 
   return (
     <div className='contact-page'>
-      <h2 className='contacth2'>Contact Me</h2>
+      <h2 className='contacth2'>Feel Free to Contact Me 🙂</h2>
       <form onSubmit={handleSubmit}>
         <div className='name'>
           <label htmlFor="name">Name:</label>

@@ -1,13 +1,13 @@
 /* General Root Styles */
 :root {
-  --primary-text-color: #5f08a7;  /* Dark text for light mode */
-  --primary-bg-color: #160029;  /* Main background color */
-  --accent-color: #2a004d;  /* Accent color for links and buttons */
+  --primary-text-color: #e4e4e4;  /* Dark text for light mode */
+  --primary-bg-color: #1e0038;  /* Main background color */
+  --accent-color: #ffffff;  /* Accent color for links and buttons */
   --hover-accent-color: #000000;  /* Accent color for hover states */
-  
+  --button-color: rgb(72, 0, 131);
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 800;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -33,7 +33,7 @@
 
 /* Link Styles */
 a {
-  font-weight: 500;
+  font-weight: 1000;
   color: var(--accent-color);
   text-decoration: none; /* Removing underline from links */
 }
@@ -44,6 +44,7 @@ a:hover {
 
 /* Body and Layout Styles */
 body {
+  min-height: 100%;
   margin: 0;
   padding: 0;
   display: flex;
@@ -58,7 +59,7 @@ body {
 /* Header and Navigation Styles */
 header {
   width: 100%;
-  padding: 10px 20px;
+  padding: 20px 20px;
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
   display: flex; 
@@ -69,6 +70,11 @@ header {
 .title {
   font-size: 2em;
   margin-left: 10%; 
+  padding: 15px 30px;
+  background-color: var(--button-color);
+  border-radius: 15px;
+  box-shadow: -3px 4px 10px rgba(180, 114, 255, 0.5); /* Optional: Adds shadow for depth */
+
   
 
 }
@@ -84,15 +90,17 @@ header {
 
 nav ul li {
   display: flex;
-  background-color: #9a2fff;
+  background-color: var(--button-color);
+  box-shadow: 3px 4px 10px rgba(180, 114, 255, 0.5); /* Optional: Adds shadow for depth */
+
   margin: 10px;
-  padding: 7px;
+  padding: 17px;
   border-radius: 15px;
 }
 
 /* Main Content Styles */
 main {
-  /* flex: 1; */
+  flex: 1;
   padding: 20px;
   /* margin-left: 10%; */
   /* margin-top: 5%; */
