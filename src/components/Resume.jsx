@@ -2,7 +2,7 @@ import React from 'react';
 
 function Resume() {
   return (
-    <div>
+    <div className='resume-page'>
       <h2>My Resume</h2>
       <p>Here you can view and download my resume.</p>
       

@@ -36,7 +36,7 @@ function App() {
           </Routes>
         </main>
         <footer>
-          <p>Footer content here.</p>
+          <p>Thank you for stopping by!</p>
         </footer>
       </div>
     </Router>

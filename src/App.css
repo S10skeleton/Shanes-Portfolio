@@ -1,69 +1,112 @@
-/* General styles
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  /* box-sizing: border-box; */
-/* } */
-
-/* Header styles */
-/* header {
-  background-color: #333;
-  color: white;
-  padding: 10px 20px;
+/* Styles for contact page  */
+.contact-page {
   display: flex;
-  justify-content: space-between;
-  align-items: left;
-} */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;  
+}
 
-/* header h1 {
-  margin: 0;
-  font-size: 24px;
-} */
+form {
+  padding: 5px;   
+}
 
-/* nav ul {
-  list-style: none;
-  padding: 0;
+button {
+  margin-left: 30%;
+}
+
+.message, .email, .name {
+  padding: 10px;
   display: flex;
-  gap: 20px;
-  margin: 0;
-} */
-
-/* nav ul li {
-  display: inline;
+  justify-content: center;
+  align-items: center;
+  
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
+label {
+  padding-right: 20px;
 }
 
-/* Main content styles */
-/* main {
-  padding: 20px;
-} */ */
-
-/* About Me styles */
-/* .about-me {
-  text-align: center;
+/* Styles for portfolio page  */
+.portfolio-page {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center align items horizontally */
+  width: 100%; /* Take full width */
 }
 
-.about-me h2 {
-  font-size: 28px;
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 columns with equal width */
+  grid-template-rows: auto auto; /* Creates as many rows as needed */
+  grid-gap: 20px; /* Adjust the gap between grid items */
+  width: 100%; /* Adjust the width as needed */
+  max-width: 1200px; /* Adjust the max width as needed */
+  margin-top: 20px; /* Space between the title and the grid */
 }
 
-.about-me p {
-  font-size: 16px;
-} */
-
-/* Footer styles */
-/* footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px 20px;
+.portfolio-item {
   position: relative;
-  bottom: 0;
-  width: 100%;
-} */ */
+  /* Styles for each portfolio item */
+  border: 1px solid #ccc; /* Example style */
+  padding: 10px;
+  border-radius: 10px; /* Example style */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Example style */
+  overflow: hidden; /* To manage content overflow */
+  transition: transform 0.3s ease-in-out; /* Smooth transformation */
+}
+
+.portfolio-item .gif-img,
+.portfolio-item .extended-content {
+  display: none; /* Hide GIF and extended content by default */
+}
+
+.portfolio-item:hover {
+  transform: scale(1.1); /* Enlarge the item on hover */
+}
+
+.portfolio-item:hover .static-img {
+  display: none; /* Hide the static image on hover */
+}
+
+.portfolio-item:hover .gif-img,
+.portfolio-item:hover .extended-content {
+  display: block; /* Show the GIF and extended content on hover */
+}
+
+/* Style for the h2 heading */
+.portfolio-page h2 {
+  text-align: center; /* Center the text */
+  width: 100%; /* Full width to ensure centering */
+  margin-top: 20px; /* Space above the title */
+}
+
+/* Styles for Resume page  */
+.resume-page {
+  display: flex;
+  flex-direction: column; /* Stacks children vertically */
+  align-items: center; /* Centers children horizontally */
+  justify-content: center; /* Centers children vertically (if needed) */
+  width: 100%; /* Takes full width of the container */
+  padding: 20px; /* Adds some padding around the content */
+  box-sizing: border-box; /* Includes padding in width calculation */
+}
+
+.resume-page h2, .resume-page h3, .resume-page p, .resume-page a, .resume-page ul {
+  width: 100%; /* Ensures full width */
+  max-width: 800px; /* Maximum width of the content */
+  text-align: center; /* Center-aligns the text */
+  margin-bottom: 20px; /* Space between elements */
+}
+
+.resume-page ul {
+  list-style: none; /* Removes bullet points */
+  padding: 0; /* Removes default padding */
+}
+
+.resume-page li {
+  margin-bottom: 10px; /* Space between list items */
+}
+
+/* Additional styling as needed */
+

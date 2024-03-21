@@ -22,10 +22,10 @@ function Contact() {
   };
 
   return (
-    <div>
-      <h2>Contact Me</h2>
+    <div className='contact-page'>
+      <h2 className='contacth2'>Contact Me</h2>
       <form onSubmit={handleSubmit}>
-        <div>
+        <div className='name'>
           <label htmlFor="name">Name:</label>
           <input 
             type="text" 
@@ -36,7 +36,7 @@ function Contact() {
             required 
           />
         </div>
-        <div>
+        <div className='email'>
           <label htmlFor="email">Email:</label>
           <input 
             type="email" 
@@ -47,7 +47,7 @@ function Contact() {
             required 
           />
         </div>
-        <div>
+        <div className='message'>
           <label htmlFor="message">Message:</label>
           <textarea 
             id="message" 
