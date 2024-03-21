@@ -1,35 +1,35 @@
-/* General styles */
+/* General styles
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  /* box-sizing: border-box; */
+/* } */
 
 /* Header styles */
-header {
+/* header {
   background-color: #333;
   color: white;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
+  align-items: left;
+} */
 
-header h1 {
+/* header h1 {
   margin: 0;
   font-size: 24px;
-}
+} */
 
-nav ul {
+/* nav ul {
   list-style: none;
   padding: 0;
   display: flex;
   gap: 20px;
   margin: 0;
-}
+} */
 
-nav ul li {
+/* nav ul li {
   display: inline;
 }
 
@@ -40,12 +40,12 @@ nav a {
 }
 
 /* Main content styles */
-main {
+/* main {
   padding: 20px;
-}
+} */ */
 
 /* About Me styles */
-.about-me {
+/* .about-me {
   text-align: center;
 }
 
@@ -55,10 +55,10 @@ main {
 
 .about-me p {
   font-size: 16px;
-}
+} */
 
 /* Footer styles */
-footer {
+/* footer {
   background-color: #333;
   color: white;
   text-align: center;
@@ -66,4 +66,4 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
-}
+} */ */
