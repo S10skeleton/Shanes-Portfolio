@@ -97,6 +97,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 45px;
   padding: 20px 50px;
   margin-top: 5%;
   width: 95%;
@@ -134,7 +135,8 @@ footer {
   }
 
   .linkList {
-    flex-direction: column; /* Vertical navigation links */
+    flex-direction: row; /* Vertical navigation links */
+    flex-wrap: wrap;
     gap: 10px;
     align-items: start; /* Align links to the start */
     margin-right: 0; /* Remove right margin on small screens */
