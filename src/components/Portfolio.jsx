@@ -20,8 +20,8 @@ function Portfolio() {
         <PortfolioItem
           className="project2 center"
           title="Wags to Riches"
-          staticImg="src\assets\Wags.png"
-          gifImg="src\assets\Wags.png"
+          staticImg="/Wags.png"
+          gifImg="\Wags.png"
           shortDesc="A simple application for adopting Cats and Dogs"
           longDesc="Extended Description 1"
           projectLink="https://github.com/S10skeleton/Wags-to-Riches"
@@ -29,8 +29,8 @@ function Portfolio() {
         <PortfolioItem 
           className="project3 right"
           title="Coder's Daily Dashboard"
-          staticImg="src\assets\Dashboard.png"
-          gifImg="src\assets\Dashboard.png"
+          staticImg="\Dashboard.png"
+          gifImg="/Dashboard.png"
           shortDesc="This is a Daily Dashboard to help coders with their day"
           longDesc="Extended Description 1"
           projectLink="link-to-project-1"
