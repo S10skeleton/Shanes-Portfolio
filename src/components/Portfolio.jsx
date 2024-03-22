@@ -7,7 +7,6 @@ function Portfolio() {
     <div className="portfolio-page">
       <h2>My Portfolio</h2>
       <div className="portfolio-container">
-        {/* Example of a project; replicate this structure for other projects */}
         <PortfolioItem
           title="Project 1"
           staticImg="path-to-image1.jpg"
@@ -25,8 +24,8 @@ function Portfolio() {
           projectLink="link-to-project-1"
         />
         <PortfolioItem
-          title="Project 1"
-          staticImg="path-to-image1.jpg"
+          title="Wags to Riches"
+          staticImg="src\assets\Screenshot 2023-12-05 172813.png"
           gifImg="path-to-gif1.gif"
           shortDesc="Short Description 1"
           longDesc="Extended Description 1"

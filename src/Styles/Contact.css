@@ -8,10 +8,19 @@
   background-color: var(--button-color);
   width: 100%; /* Full width of the container */
   max-width: 500px; /* Maximum width of the content area */
-  margin: 0 auto; /* Centers the content */
+  margin: 70px auto; /* Centers the content */
   box-shadow: -3px 4px 10px rgba(180, 114, 255, 0.5); /* Optional: Adds shadow for depth */
   border-radius: 10px; /* Optional: Rounds the corners */
 }
+
+.contact-page a p {
+  display: block; /* Makes each link a block element */
+  margin-bottom: 10px; /* Adds space below each link */
+}
+.contact-page a:last-child {
+  margin-top: 15px;
+}
+
 
 /* If you want to maintain the full-width background on smaller screens */
 @media (max-width: 800px) {
@@ -22,23 +31,3 @@
   }
 }
 
-form {
-  padding: 5px;
-}
-
-button {
-  margin-left: 30%;
-}
-
-.message,
-.email,
-.name {
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-label {
-  padding-right: 20px;
-}
