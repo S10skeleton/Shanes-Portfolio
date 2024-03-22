@@ -1,0 +1,56 @@
+/* Styles for portfolio page  */
+.portfolio-page {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center align items horizontally */
+  width: 100%; /* Take full width */
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Creates 3 columns with equal width */
+  grid-template-rows: auto auto; /* Creates as many rows as needed */
+  grid-gap: 20px; /* Adjust the gap between grid items */
+  width: 100%; /* Adjust the width as needed */
+  max-width: 1200px; /* Adjust the max width as needed */
+  margin-top: 20px; /* Space between the title and the grid */
+}
+
+.portfolio-item {
+  position: relative;
+  /* Styles for each portfolio item */
+  border: 1px solid #ccc; /* Example style */
+  padding: 10px;
+  border-radius: 10px; /* Example style */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Example style */
+  overflow: hidden; /* To manage content overflow */
+  transition: transform 0.3s ease-in-out; /* Smooth transformation */
+}
+
+.portfolio-item .gif-img,
+.portfolio-item .extended-content {
+  display: none; /* Hide GIF and extended content by default */
+}
+
+.portfolio-item:hover {
+  transform: scale(1.1); /* Enlarge the item on hover */
+}
+
+.portfolio-item:hover .static-img {
+  display: none; /* Hide the static image on hover */
+}
+
+.portfolio-item:hover .gif-img,
+.portfolio-item:hover .extended-content {
+  display: block; /* Show the GIF and extended content on hover */
+}
+
+/* Style for the h2 heading */
+.portfolio-page h2 {
+  text-align: center; /* Center the text */
+  width: 100%; /* Full width to ensure centering */
+  margin-top: 20px; /* Space above the title */
+}

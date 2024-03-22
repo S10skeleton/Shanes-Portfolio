@@ -1,0 +1,19 @@
+/* Styles for About Me Page  */
+
+.about-me-page {
+  display: flex;
+  flex-direction: column; /* Stacks children vertically */
+  align-items: center; /* Centers children horizontally */
+  justify-content: center; /* Centers children vertically (if needed) */
+  width: 100%; /* Takes full width of the container */
+  padding: 20px; /* Adds some padding around the content */
+  box-sizing: border-box; /* Includes padding in width calculation */
+}
+
+.about-me-page h2,
+.about-me-page p {
+  width: 100%; /* Ensures full width */
+  max-width: 800px; /* Maximum width of the content */
+  text-align: center; /* Center-aligns the text */
+  margin-bottom: 20px; /* Space between elements */
+}

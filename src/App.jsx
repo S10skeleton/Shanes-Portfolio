@@ -1,6 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import "./App.css";
+// import css files";
+import './Styles/AboutMe.css';
+import './Styles/Portfolio.css';
+import './Styles/Contact.css';
+import './Styles/Resume.css';
+
+
 
 // Import your components
 import Home from "./components/Home";

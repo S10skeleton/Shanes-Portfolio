@@ -1,4 +1,6 @@
 import React from 'react';
+import '../Styles/Resume.css';
+
 
 function Resume() {
   return (

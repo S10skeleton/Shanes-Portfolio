@@ -1,0 +1,44 @@
+/* Styles for contact page  */
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--button-color);
+  width: 100%; /* Full width of the container */
+  max-width: 500px; /* Maximum width of the content area */
+  margin: 0 auto; /* Centers the content */
+  box-shadow: -3px 4px 10px rgba(180, 114, 255, 0.5); /* Optional: Adds shadow for depth */
+  border-radius: 10px; /* Optional: Rounds the corners */
+}
+
+/* If you want to maintain the full-width background on smaller screens */
+@media (max-width: 800px) {
+  .contact-page {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0; /* Removes border radius for full-width layout on small screens */
+  }
+}
+
+form {
+  padding: 5px;
+}
+
+button {
+  margin-left: 30%;
+}
+
+.message,
+.email,
+.name {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  padding-right: 20px;
+}
