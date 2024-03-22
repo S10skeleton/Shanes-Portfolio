@@ -137,6 +137,7 @@ footer {
   .linkList {
     flex-direction: row; /* Vertical navigation links */
     flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
     align-items: start; /* Align links to the start */
     margin-right: 0; /* Remove right margin on small screens */
