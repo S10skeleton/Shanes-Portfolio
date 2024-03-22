@@ -49,7 +49,10 @@ function Home() {
         {showSorryMessage && <p>Sorry, only one high-five per session!</p>}
         {showGreedyMessage && <p>Alright Mr Greedy, no more high-fives for you!</p>}
       </div>
-      {/* ...other content... */}
+            {/* // Placeholder section for a personal picture or avatar */}
+            <div className="self">
+        <p>My picture </p>
+      </div>
     </div>
   );
 }
