@@ -20,3 +20,18 @@
     flex-direction: column;
     justify-content: center;
 }
+
+.high-five-button {
+    background: transparent; /* Removes any background color */
+    border: none; /* Removes the border */
+    cursor: pointer;
+    font-size: 40px;
+    padding-left: 20px; /* Removes padding */
+    margin: 0; /* Removes margin */
+    outline: none; /* Removes the focus outline */
+  }
+  
+  .high-five-button:hover {
+    color: #007bff; /* Example: Change color on hover */
+  }
+  
