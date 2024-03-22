@@ -5,6 +5,7 @@
   align-items: center; /* Centers children horizontally */
   justify-content: center; /* Centers children vertically (if needed) */
   width: 100%; /* Takes full width of the container */
+  margin: 25px auto;
   padding: 20px; /* Adds some padding around the content */
   box-sizing: border-box; /* Includes padding in width calculation */
 }
@@ -21,6 +22,10 @@
 }
 
 .resume-page ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   list-style: none; /* Removes bullet points */
   padding: 0; /* Removes default padding */
 }

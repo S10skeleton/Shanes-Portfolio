@@ -1,19 +1,37 @@
-/* Styles for About Me Page  */
-
-.about-me-page {
+.about-container {
   display: flex;
-  flex-direction: column; /* Stacks children vertically */
-  align-items: center; /* Centers children horizontally */
-  justify-content: center; /* Centers children vertically (if needed) */
-  width: 100%; /* Takes full width of the container */
-  padding: 20px; /* Adds some padding around the content */
-  box-sizing: border-box; /* Includes padding in width calculation */
+  flex-direction: row; /* Align items in a row */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center the entire container horizontally */
+  gap: 80px; /* Adds space between the selfie and about-me */
+  width: 100%; /* Ensures the container takes full width */
+  margin: 50px auto; /* Centers the container in the viewport */
+  padding: 20px; /* Optional: Adds padding around the container */
 }
 
-.about-me-page h2,
-.about-me-page p {
-  width: 100%; /* Ensures full width */
-  max-width: 800px; /* Maximum width of the content */
-  text-align: center; /* Center-aligns the text */
-  margin-bottom: 20px; /* Space between elements */
+.selfie, .about-me-page {
+  flex: 1; /* Both take equal space */
+  text-align: center; /* Center content inside each */
+}
+
+.selfie {
+  max-width: 400px; /* Additional styling for selfie, e.g., for image */
+}
+
+.about-me-page {
+  max-width: 400px; /* Adjust this as needed */
+  padding: 20px;
+  background-color: var(--button-color);
+  border-radius: 15px;
+}
+
+.about-me-page h2, .about-me-page p {
+  margin-bottom: 20px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 800px) {
+  .about-container {
+    flex-direction: column; /* Stack them vertically on smaller screens */
+  }
 }

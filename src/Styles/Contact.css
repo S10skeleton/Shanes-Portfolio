@@ -9,7 +9,8 @@
   width: 100%; /* Full width of the container */
   max-width: 500px; /* Maximum width of the content area */
   margin: 70px auto; /* Centers the content */
-  box-shadow: -3px 4px 10px rgba(180, 114, 255, 0.5); /* Optional: Adds shadow for depth */
+  box-shadow: -3px 4px 10px rgba(180, 114, 255, 0.5);
+  border: 1px solid #130041; 
   border-radius: 10px; /* Optional: Rounds the corners */
 }
 
@@ -17,6 +18,11 @@
   display: block; /* Makes each link a block element */
   margin-bottom: 10px; /* Adds space below each link */
 }
+
+p {
+  font-size: 22px;
+}
+
 .contact-page a:last-child {
   margin-top: 15px;
 }

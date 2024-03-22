@@ -1,19 +1,24 @@
-import React from 'react';
-import '../Styles/Home.css';
+import React from "react";
+import "../Styles/Home.css";
 
-
+// Function component for the Home page
 function Home() {
   return (
-    <div className='home-page'>
-      <div className='welcome'>
-      <h2>Welcome 🙋‍♂️</h2>
-      <p>Outgoing problem solver specializing in full stack, <br></br> software and mechanical engineering.</p>
+    // Container for the Home page content
+    <div className="home-page">
+      {/* // Section for the welcome message */}
+      <div className="welcome">
+        <h2>Welcome 🙋‍♂️</h2>
+        <p>
+          Outgoing problem solver specializing in full stack, <br></br> software
+          and mechanical engineering.
+        </p>
       </div>
-      <div className='self'>
-      <p>My picture </p>
+      {/* // Placeholder section for a personal picture or avatar */}
+      <div className="self">
+        <p>My picture </p>
       </div>
     </div>
-
   );
 }
 

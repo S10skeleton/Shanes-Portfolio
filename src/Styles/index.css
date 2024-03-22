@@ -1,9 +1,9 @@
 /* General Root Styles */
 :root {
-  --primary-text-color: #e4e4e4;  /* Dark text for light mode */
-  --primary-bg-color: #1e0038;  /* Main background color */
-  --accent-color: #ffffff;  /* Accent color for links and buttons */
-  --hover-accent-color: #000000;  /* Accent color for hover states */
+  --primary-text-color: #e4e4e4; /* Dark text for light mode */
+  --primary-bg-color: #1e0038; /* Main background color */
+  --accent-color: #ffffff; /* Accent color for links and buttons */
+  --hover-accent-color: #000000; /* Accent color for hover states */
   --button-color: rgb(72, 0, 131);
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -16,24 +16,10 @@
   /* color-scheme: light dark; */
 }
 
-/* Light and Dark Mode Support */
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: var(--primary-text-color);
-    background-color: var(--primary-bg-color);
-  }
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    color: var(--secondary-text-color);
-    background-color: var(--secondary-bg-color);
-  } */
-/* } */
-
-/* Link Styles */
 a {
   font-weight: 1000;
+  font-size: 20px;
   color: var(--accent-color);
   text-decoration: none; /* Removing underline from links */
 }
@@ -48,7 +34,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   /* align-items: center; */
   /* justify-content: center; */
   min-height: 100vh;
@@ -62,21 +48,19 @@ header {
   padding: 20px 20px;
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .title {
-  font-size: 2em;
-  margin-left: 10%; 
+  font-size: 2.5em;
+  margin-left: 10%;
   padding: 15px 30px;
   background-color: var(--button-color);
   border-radius: 15px;
-  box-shadow: -3px 4px 10px rgba(180, 114, 255, 0.5); /* Optional: Adds shadow for depth */
-
-  
-
+  box-shadow: -3px 4px 10px rgba(180, 114, 255, 0.5);
+  border: 1px solid #130041;
 }
 
 .linkList {
@@ -91,8 +75,8 @@ header {
 nav ul li {
   display: flex;
   background-color: var(--button-color);
-  box-shadow: 3px 4px 10px rgba(180, 114, 255, 0.5); /* Optional: Adds shadow for depth */
-
+  box-shadow: 3px 4px 10px rgba(180, 114, 255, 0.5);
+  border: 1px solid #130041;
   margin: 10px;
   padding: 17px;
   border-radius: 15px;
@@ -118,16 +102,17 @@ footer {
   color: var(--primary-text-color);
 }
 
-/* General styles (apply to all devices) */
-/* ... existing styles ... */
+
 
 /* Tablet devices (medium screens, 768px and up) */
-@media (min-width: 768px) {
+@media (max-width: 1024px) {
   .title {
     font-size: 2.5em; /* Larger title for tablets */
   }
 
   .linkList {
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px; /* More space between links for larger screens */
   }
 
@@ -135,7 +120,7 @@ footer {
 }
 
 /* Mobile devices (small screens, up to 767px) */
-@media (max-width: 767px) {
+@media (max-width: 750px) {
   header {
     flex-direction: column; /* Stack title and navigation vertically on small screens */
     padding: 10px;
@@ -160,4 +145,3 @@ footer {
 }
 
 /* Other existing styles */
-

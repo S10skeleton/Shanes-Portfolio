@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-// import css files";
+
+// Import styles 
 import './Styles/AboutMe.css';
 import './Styles/Portfolio.css';
 import './Styles/Contact.css';
@@ -14,6 +15,8 @@ import AboutMe from "./components/AboutMe"; // Assume these are separate compone
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
+
+
 
 function App() {
   return (
