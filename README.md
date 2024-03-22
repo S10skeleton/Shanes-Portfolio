@@ -57,7 +57,7 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 ### Repo
 https://github.com/S10skeleton/Shanes-Portfolio-
 ### Deployment
-https://shanes-portfolio.netlify.app/
+https://shanes-portfolio.com 
 
 ## Screenshot 
 
