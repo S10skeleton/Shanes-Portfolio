@@ -19,6 +19,14 @@
   margin-bottom: 10px; /* Adds space below each link */
 }
 
+.git {
+  margin-bottom: 8px;
+}
+
+.link {
+  margin: 5px;
+}
+
 p {
   font-size: 22px;
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"; 
 import "../Styles/Portfolio.css";
 
 // Portfolio component to showcase different projects
@@ -6,14 +6,14 @@ function Portfolio() {
   return (
         // Container for the portfolio section
     <div className="portfolio-page">
-      <h1>A Few of the Applications I Have Made</h1>
+      <h1>A Few of the Applications Produced by Me</h1>
       <div className="portfolio-container">
         <PortfolioItem
           className="project1 left"
-          title="Project 1"
+          title="MyFlix"
           staticImg="path-to-image1.jpg"
           gifImg="path-to-gif1.gif"
-          shortDesc="Short Description 1"
+          shortDesc="A clone close to netflix but for my personal collection of movies"
           longDesc="Extended Description 1"
           projectLink="link-to-project-1"
         />

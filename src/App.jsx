@@ -54,6 +54,8 @@ function App() {
           </Routes>
         </main>
         <footer>
+          <p>Designed and Developed by Shane Beaman</p>
+          <p>Copyright © 2024</p>
           <p>Thank you for stopping by! 🙋‍♂️</p>
         </footer>
       </div>

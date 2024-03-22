@@ -3,7 +3,7 @@
   flex-direction: row; /* Align items in a row */
   align-items: center; /* Center items vertically */
   justify-content: center; /* Center the entire container horizontally */
-  gap: 80px; /* Adds space between the selfie and about-me */
+  gap: 250px; /* Adds space between the selfie and about-me */
   width: 100%; /* Ensures the container takes full width */
   margin: 50px auto; /* Centers the container in the viewport */
   padding: 20px; /* Optional: Adds padding around the container */

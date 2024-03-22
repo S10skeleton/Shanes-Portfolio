@@ -88,15 +88,18 @@ main {
   padding: 20px;
   /* margin-left: 10%; */
   /* margin-top: 5%; */
-  width: 100%;
+  width: 98%;
   /* max-width: 800px;  */
 }
 
 /* Footer Styles */
 footer {
-  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 50px;
   margin-top: 5%;
-  width: 100%;
+  width: 95%;
   text-align: center;
   background-color: var(--secondary-bg-color);
   color: var(--primary-text-color);

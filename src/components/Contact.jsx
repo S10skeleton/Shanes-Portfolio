@@ -16,12 +16,12 @@ function Contact() {
       <p>📞 Phone: 406-546-6577</p>
 
       {/* // Link to the Github profile */}
-      <a href="https://github.com/S10skeleton">
+      <a className="git" href="https://github.com/S10skeleton">
         🐈‍⬛ Github Profile: S10skeleton
       </a>
 
       {/* // Link to the LinkedIn profile */}
-      <a href="https://www.linkedin.com/in/shane-beaman-07495627/">
+      <a className="link" href="https://www.linkedin.com/in/shane-beaman-07495627/">
         🔗 Linkedin: S10skeleton
       </a>
     </div>
