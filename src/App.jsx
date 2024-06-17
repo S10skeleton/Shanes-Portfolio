@@ -1,35 +1,22 @@
-import React, { useState, useEffect } from "react";
-import './Styles/Styles.css';
+import "./Styles/Styles.css";
+import screenshot1 from "./assets/screenshots/myflixscreenshot.png"; // Example image path
+import video1 from "./assets/videos/EmployeeTracker.webm"; // Example video path
+import screenshot2 from "./assets/screenshots/Wags.png"; // Example image path
+import video2 from "./assets/videos/EmployeeTracker.webm"; 
+import screenshot3 from "./assets/screenshots/Dashboard.png"; // Example image path
+import video3 from "./assets/videos/EmployeeTracker.webm"; 
+import screenshot4 from "./assets/screenshots/Wags.png"; // Example image path
+import video4 from "./assets/videos/EmployeeTracker.webm"; 
+import screenshot5 from "./assets/screenshots/Wags.png"; // Example image path
+import video5 from "./assets/videos/EmployeeTracker.webm"; 
+import screenshot6 from "./assets/screenshots/Wags.png"; // Example image path
+import video6 from "./assets/videos/EmployeeTracker.webm"; 
 
 // Function component for the 'Home' section of the website
 function Home() {
-  const [highFiveCount, setHighFiveCount] = useState(
-    parseInt(localStorage.getItem("highFiveCount")) || 6
-  );
-  const [buttonClickCount, setButtonClickCount] = useState(0);
-
-  useEffect(() => {
-    localStorage.setItem("highFiveCount", highFiveCount);
-  }, [highFiveCount]);
-
-  const handleClick = () => {
-    setHighFiveCount(highFiveCount + 1);
-    setButtonClickCount(buttonClickCount + 1);
-  };
-
   return (
     <div className="home-container">
-      <h1 className="home-title">Shane Beaman</h1>
-      <p className="home-text">Welcome to my portfolio website!</p>
-      <button onClick={handleClick} className="high-five-button">
-        Give me a High-Five! 🙌
-      </button>
-      <p className="high-five-count">
-        You have given me {highFiveCount} high-fives!
-      </p>
-      <p className="button-click-count">
-        Button clicked {buttonClickCount} times.
-      </p>
+         <p className="home-text">Welcome to my portfolio website!</p>
     </div>
   );
 }
@@ -49,18 +36,73 @@ function AboutMe() {
   );
 }
 
-// Function component for the Portfolio page
+const projects = [
+  {
+    id: 1,
+    title: "My Flix",
+    description: "MyFlix is a custom-built streaming service designed to mirror the functionality of Netflix. Developed to cater to my personal entertainment preferences, MyFlix allows for a personalized viewing experience with a user-friendly interface, seamless video playback, and a robust library management system. This project showcases my skills in full stack development, including the use of the MERN stack (MongoDB, Express.js, React.js, Node.js), API integration, and responsive design.",
+    screenshot: screenshot1,
+    video: video1,
+  },
+  {
+    id: 2,
+    title: "Wags to Riches",
+    description: "Wags to Riches is a comprehensive pet adoption platform designed to simplify the process of finding and adopting pets. Utilizing a web API, this application provides an up-to-date list of available dogs and cats, offering basic information for each pet. Clicking on a pet's picture navigates to a detailed page with additional information and direct links to the adoption location, streamlining the adoption process. The goal of Wags to Riches is to make it easier to find adoptable animals beyond local sources, enhancing accessibility and convenience for potential pet owners.",
+    screenshot: screenshot2,
+    video: video2,
+  },
+  {
+    id: 3,
+    title: "Daily Dashboard",
+    description: "The Software Developer's Daily Dashboard is a single-page web application designed to streamline a developer's daily routine. It features a daily planner for scheduling events, a weather forecast for your location, and a YouTube API integration for listening to music while planning your day. Additionally, the dashboard includes an API that accesses your GitHub repositories, providing quick and easy access to your projects. This application is a comprehensive tool to enhance productivity and organization for software developers.",
+    screenshot: screenshot3,
+    video: video3,
+  },
+  {
+    id: 4,
+    title: "Project 4",
+    description: "Project 4 description",
+    screenshot: screenshot4,
+    video: video4,
+  },
+  {
+    id: 5,
+    title: "Project 5",
+    description: "Project 5 description",
+    screenshot: screenshot5,
+    video: video5,
+  },
+  {
+    id: 6,
+    title: "Project 6",
+    description: "Project 6 description",
+    screenshot: screenshot6,
+    video: video6,
+  },
+];
+
 function Portfolio() {
   return (
     <div className="portfolio-page">
       <h2>My Projects</h2>
-      <div className="project">
-        <h3>Project 1</h3>
-        <p>Project 1 description</p>
-      </div>
-      <div className="project">
-        <h3>Project 2</h3>
-        <p>Project 2 description</p>
+      <div className="portfolio-container">
+        {projects.map((project) => (
+          <div className="portfolio-item" key={project.id}>
+            <h3>{project.title}</h3>
+            <p className="project-description">{project.description}</p>
+            <div className="media-container">
+              <img
+                src={project.screenshot}
+                alt={project.title}
+                className="static-img"
+              />
+              <video className="gif-img" loop muted>
+                <source src={project.video} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
@@ -76,7 +118,10 @@ function Contact() {
       <a className="git" href="https://github.com/S10skeleton">
         🐈‍⬛ Github Profile: S10skeleton
       </a>
-      <a className="link" href="https://www.linkedin.com/in/shane-beaman-07495627/">
+      <a
+        className="link"
+        href="https://www.linkedin.com/in/shane-beaman-07495627/"
+      >
         🔗 Linkedin: S10skeleton
       </a>
     </div>
@@ -86,7 +131,7 @@ function Contact() {
 // Function component for the Resume page
 function Resume() {
   return (
-    <div className='resume-page'>
+    <div className="resume-page">
       <h3>Proficiencies</h3>
       <ul>
         <li>HTML & CSS</li>
@@ -109,8 +154,12 @@ function Resume() {
 function App() {
   return (
     <div className="App">
+      <video id="bg-video" autoplay loop muted>
+        <source src="./assets/background.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <header>
-        <h2 className="title">Shane's Portfolio</h2>
+        <h2 className="title">Shane Beaman</h2>
         <nav>
           <ul className="linkList">
             <li>
