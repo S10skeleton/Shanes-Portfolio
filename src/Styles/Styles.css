@@ -3,7 +3,7 @@
   --primary-text-color: #ffffff;
   --primary-bg-color: #1f1f1f;
   --accent-color: #ffffff;
-  --hover-accent-color: #000000;
+  --hover-accent-color: #6e0000;
   --button-color: rgb(0, 0, 0);
   --box-shadow-color: 3px 4px 10px rgb(68, 0, 0);
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -38,14 +38,13 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: var(--primary-bg-color);
+
   color: var(--primary-text-color);
 }
 
 header {
   width: 100%;
   padding: 20px 20px;
-  background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
   display: flex;
   justify-content: space-between;
@@ -53,20 +52,6 @@ header {
 }
 
 /* Video Background Styles */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: url('../assets/background.mp4') no-repeat center center fixed;
-  background-size: cover;
-  background-attachment: fixed;
-  filter: brightness(0.7); /* Adjust the brightness if necessary */
-}
-
 video#bg-video {
   position: fixed;
   top: 50%;
@@ -75,8 +60,8 @@ video#bg-video {
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -2;
-  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+  transform: translateX(-50%) translateY(-50%) scale(.50);
   background-size: cover;
   transition: 1s opacity;
 }
@@ -87,7 +72,7 @@ video#bg-video {
   }
 }
 
-
+/* Additional Styles */
 .title {
   font-size: 2.5em;
   margin-left: 10%;
@@ -136,43 +121,13 @@ footer {
   color: var(--primary-text-color);
 }
 
-
-
+/* Home.css */
 .home-container {
   text-align: center;
   padding: 50px;
 }
 .home-title {
   font-size: 36px;
-}
-.high-five-button {
-  font-size: 18px;
-  padding: 10px 20px;
-  margin: 20px;
-}
-.high-five-count, .button-click-count {
-  font-size: 20px;
-}
-
-.home-page {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 10px;
-}
-.welcome {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.self {
-  margin-right: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 /* AboutMe.css */
@@ -204,7 +159,6 @@ footer {
   margin-bottom: 20px;
 }
 
-
 /* Portfolio.css */
 .portfolio-page {
   display: flex;
@@ -212,7 +166,7 @@ footer {
   align-items: center;
   width: 100%;
 }
-.project-description{
+.project-description {
   font-size: small;
 }
 .portfolio-container {
@@ -271,7 +225,6 @@ footer {
     transform: scale(1.05);
   }
 }
-
 
 /* Contact.css */
 .contact-page {
@@ -340,4 +293,4 @@ p {
 }
 .resume-page li {
   margin-bottom: 10px;
-} */
+}

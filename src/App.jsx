@@ -132,8 +132,8 @@ function Contact() {
 function Resume() {
   return (
     <div className="resume-page">
-      <h3>Proficiencies</h3>
-      <ul>
+      <h3>Skills</h3>
+      <ul className="Skills">
         <li>HTML & CSS</li>
         <li>JavaScript (ES6+)</li>
         <li>React.js</li>
@@ -154,8 +154,8 @@ function Resume() {
 function App() {
   return (
     <div className="App">
-      <video id="bg-video" autoplay loop muted>
-        <source src="./assets/background.mp4" type="video/mp4" />
+            <video id="bg-video" autoPlay loop muted>
+        <source src="src\assets\videos\background.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <header>
