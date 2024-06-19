@@ -1,7 +1,7 @@
 /* General Root Styles */
 :root {
   --primary-text-color: #ffffff;
-  --primary-bg-color: #1f1f1f;
+  --primary-bg-color:  #1f1f1f;
   --accent-color: #ffffff;
   --hover-accent-color: #6e0000;
   --button-color: rgb(0, 0, 0);
@@ -63,7 +63,7 @@ video#bg-video {
   z-index: -1;
   transform: translateX(-50%) translateY(-50%) scale(.50);
   background-size: cover;
-  transition: 1s opacity;
+  /* transition: 1s opacity; */
 }
 
 @media (pointer: coarse) and (hover: none) {
@@ -124,11 +124,9 @@ footer {
 /* Home.css */
 .home-container {
   text-align: center;
-  padding: 50px;
+  padding: 5px;
 }
-.home-title {
-  font-size: 36px;
-}
+
 
 /* AboutMe.css */
 .about-container {
@@ -140,6 +138,10 @@ footer {
   width: 100%;
   margin: 50px auto;
   padding: 20px;
+}
+
+.home-text{
+  font-size: 40px;
 }
 .selfie, .about-me-page {
   flex: 1;
@@ -266,6 +268,7 @@ p {
   }
 }
 
+
 /* Resume.css */
 .resume-page {
   display: flex;
@@ -277,20 +280,60 @@ p {
   padding: 20px;
   box-sizing: border-box;
 }
-.resume-page h2, .resume-page h3, .resume-page p, .resume-page a, .resume-page ul {
+
+.resume-page h2,
+.resume-page h3,
+.resume-page p,
+.resume-page a,
+.skills-container {
   width: 100%;
-  max-width: 800px;
+  max-width: 1200px; /* Adjusted to a wider container */
   text-align: center;
   margin-bottom: 20px;
 }
-.resume-page ul {
+
+.resume-page h3 {
+  font-size: 30px;
+}
+
+.skills-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-column {
+  flex: 1;
+  min-width: 300px;
+}
+.main-column h4 {
+  font-size: 25px;
+}
+
+.sub-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sub-category {
+  flex: 1;
+  min-width: 200px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.sub-category h5 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.skills-list {
   list-style: none;
   padding: 0;
+  text-align: left;
 }
-.resume-page li {
-  margin-bottom: 10px;
+
+.skills-list li {
+  margin-bottom: 5px;
 }

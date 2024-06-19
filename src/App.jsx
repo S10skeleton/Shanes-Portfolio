@@ -1,3 +1,4 @@
+import React, { useEffect, useRef } from 'react';
 import "./Styles/Styles.css";
 import screenshot1 from "./assets/screenshots/myflixscreenshot.png"; // Example image path
 import video1 from "./assets/videos/EmployeeTracker.webm"; // Example video path
@@ -16,7 +17,7 @@ import video6 from "./assets/videos/EmployeeTracker.webm";
 function Home() {
   return (
     <div className="home-container">
-         <p className="home-text">Welcome to my portfolio website!</p>
+         <p className="home-text">Welcome!</p>
     </div>
   );
 }
@@ -27,7 +28,7 @@ function AboutMe() {
     <div className="about-container">
       <div className="about-me-page">
         <h2>About Me</h2>
-        <p>This section will contain information about me.</p>
+        <p>Hello! I'm Shane, a versatile engineer skilled in Full Stack MERN, Python, AI prompt engineering, UI design, and fabrication/prototyping. I thrive on creating innovative solutions to advance technology for a better world.</p>
       </div>
       <div className="selfie">
         <p>Selfie</p>
@@ -112,7 +113,7 @@ function Portfolio() {
 function Contact() {
   return (
     <div className="contact-page">
-      <h1 className="contacth2">Feel Free to Contact Me 🙂</h1>
+      <h1 className="contacth2">Connect With Me</h1>
       <a href="mailto:S10skelton@gmail.com">✉️ Email: S10Skeleton@gmail.com</a>
       <p>📞 Phone: 406-546-6577</p>
       <a className="git" href="https://github.com/S10skeleton">
@@ -133,15 +134,122 @@ function Resume() {
   return (
     <div className="resume-page">
       <h3>Skills</h3>
-      <ul className="Skills">
-        <li>HTML & CSS</li>
-        <li>JavaScript (ES6+)</li>
-        <li>React.js</li>
-        <li>Node.js</li>
-        <li>Database Management (SQL, MongoDB)</li>
-        <li>Version Control (Git, GitHub)</li>
-        <li>Other skills...</li>
-      </ul>
+      <div className="skills-container">
+        <div className="main-column">
+          <h4>Technical Skills</h4>
+          <div className="sub-columns">
+            <div className="sub-category">
+              <h5>Full Stack Development</h5>
+              <ul className="skills-list">
+                <li>MERN Stack (MongoDB, Express.js, React.js, Node.js)</li>
+                <li>RESTful API development</li>
+                <li>GraphQL</li>
+                <li>WebSockets</li>
+                <li>JWT authentication</li>
+              </ul>
+            </div>
+            <div className="sub-category">
+              <h5>Front-end Development</h5>
+              <ul className="skills-list">
+                <li>HTML5, CSS3, JavaScript (ES6+)</li>
+                <li>React.js (Hooks, Context API, Redux)</li>
+                <li>Responsive design (Bootstrap, Material-UI)</li>
+                <li>Cross-browser compatibility</li>
+              </ul>
+            </div>
+            <div className="sub-category">
+              <h5>Back-end Development</h5>
+              <ul className="skills-list">
+                <li>Node.js, Express.js</li>
+                <li>API development and integration</li>
+                <li>Server-side rendering</li>
+              </ul>
+            </div>
+            <div className="sub-category">
+              <h5>Database Management</h5>
+              <ul className="skills-list">
+                <li>MongoDB, Mongoose</li>
+                <li>SQL (MySQL, PostgreSQL)</li>
+                <li>Database design and normalization</li>
+              </ul>
+            </div>
+          </div>
+          <div className="sub-columns">
+            <div className="sub-category">
+              <h5>DevOps and Tools</h5>
+              <ul className="skills-list">
+                <li>Git, GitHub, GitLab</li>
+                <li>Docker, Kubernetes</li>
+                <li>CI/CD pipelines (Jenkins, GitHub Actions)</li>
+                <li>Cloud services (AWS, Azure, Google Cloud)</li>
+              </ul>
+            </div>
+            <div className="sub-category">
+              <h5>Robotics and Automation</h5>
+              <ul className="skills-list">
+                <li>Python programming</li>
+                <li>ROS (Robot Operating System)</li>
+                <li>Embedded systems (Arduino, Raspberry Pi)</li>
+                <li>Sensor integration and control systems</li>
+              </ul>
+            </div>
+            <div className="sub-category">
+              <h5>Mechanical Engineering</h5>
+              <ul className="skills-list">
+                <li>CAD software (AutoCAD, SolidWorks)</li>
+                <li>Welding and fabrication</li>
+                <li>Mechanical design and analysis</li>
+                <li>Prototyping and product development</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="main-column">
+          <h4>Management and Soft Skills</h4>
+          <div className="sub-columns">
+            <div className="sub-category">
+              <h5>Project Management</h5>
+              <ul className="skills-list">
+                <li>Agile methodologies (Scrum, Kanban)</li>
+                <li>Project planning and scheduling</li>
+                <li>Risk management</li>
+                <li>Budgeting and cost control</li>
+              </ul>
+            </div>
+            <div className="sub-category">
+              <h5>Business Management</h5>
+              <ul className="skills-list">
+                <li>Business strategy and planning</li>
+                <li>Financial management</li>
+                <li>Marketing and sales strategies</li>
+                <li>Customer relationship management</li>
+              </ul>
+            </div>
+          </div>
+          <div className="sub-columns">
+            <div className="sub-category">
+              <h5>Team Leadership</h5>
+              <ul className="skills-list">
+                <li>Team building and motivation</li>
+                <li>Conflict resolution</li>
+                <li>Performance management</li>
+                <li>Training and mentoring</li>
+              </ul>
+            </div>
+            <div className="sub-category">
+              <h5>Personal Attributes</h5>
+              <ul className="skills-list">
+                <li>Punctuality and reliability</li>
+                <li>Honesty and integrity</li>
+                <li>Strong work ethic</li>
+                <li>Independent working and self-starting</li>
+                <li>Excellent problem-solving skills</li>
+                <li>Creative and out-of-the-box thinking</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
       <h2>My Resume</h2>
       <a href="path-to-your-resume.pdf" download>
         Download My Resume
@@ -151,7 +259,17 @@ function Resume() {
   );
 }
 
+
+
+
 function App() {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.5; // Set the desired playback speed
+    }
+  }, []);
   return (
     <div className="App">
             <video id="bg-video" autoPlay loop muted>
@@ -200,7 +318,7 @@ function App() {
       <footer>
         <p>Designed and Developed by Shane Beaman</p>
         <p>Copyright © 2024</p>
-        <p>Thank you for stopping by! 🙋‍♂️</p>
+        <p>Thank you for stopping by!</p>
       </footer>
     </div>
   );
