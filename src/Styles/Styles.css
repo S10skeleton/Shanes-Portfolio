@@ -191,27 +191,16 @@ footer {
 }
 .portfolio-item:hover {
   z-index: 10;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 .portfolio-item .media-container {
   position: relative;
 }
-.static-img, .gif-img {
+.static-img {
   width: 100%;
   border-radius: 10px;
 }
-.gif-img {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.portfolio-item:hover .static-img {
-  display: none;
-}
-.portfolio-item:hover .gif-img {
-  display: block;
-}
+
 
 @media (max-width: 1024px) {
   .portfolio-container {

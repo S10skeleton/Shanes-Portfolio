@@ -10,7 +10,7 @@ import screenshot4 from "./assets/screenshots/Wags.png"; // Example image path
 import video4 from "./assets/videos/EmployeeTracker.webm"; 
 import screenshot5 from "./assets/screenshots/Wags.png"; // Example image path
 import video5 from "./assets/videos/EmployeeTracker.webm"; 
-import screenshot6 from "./assets/screenshots/Wags.png"; // Example image path
+import screenshot6 from "./assets/screenshots/HQ.jpg"; // Example image path
 import video6 from "./assets/videos/EmployeeTracker.webm"; 
 
 // Function component for the 'Home' section of the website
@@ -75,8 +75,8 @@ const projects = [
   },
   {
     id: 6,
-    title: "Project 6",
-    description: "Project 6 description",
+    title: "Smart Entertainment Command Center",
+    description: "I designed and built this custom entertainment and work station from scratch, combining functionality with aesthetics. The station features a steel frame and particle board panels, ensuring both durability and stability. It is fully motorized, allowing the 65-inch TV to tilt and travel vertically from the desk to the ceiling, all controlled through a convenient app on my phone.The LED lighting system is powered by ESP32 boards and WLED, providing customizable ambient lighting. For audio, I incorporated two 12-inch subwoofers connected to a car amplifier, delivering powerful bass for movies and immersive vibrations for video games. To enhance the overall look, I wrapped the structure in carbon fiber and brushed steel vinyl wrap, while the tops are covered in neoprene for a sleek, professional finish. This setup not only allows me to work efficiently at my desk but also provides an exceptional entertainment experience for watching movies and gaming.",
     screenshot: screenshot6,
     video: video6,
   },
@@ -97,10 +97,7 @@ function Portfolio() {
                 alt={project.title}
                 className="static-img"
               />
-              <video className="gif-img" loop muted>
-                <source src={project.video} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+
             </div>
           </div>
         ))}
