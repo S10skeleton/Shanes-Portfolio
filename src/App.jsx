@@ -270,7 +270,7 @@ function App() {
   return (
     <div className="App">
             <video id="bg-video" autoPlay loop muted>
-        <source src="src\assets\videos\background.mp4" type="video/mp4" />
+        <source src="public\background.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <header>
