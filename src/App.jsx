@@ -260,19 +260,10 @@ function Resume() {
 
 
 function App() {
-  const videoRef = useRef(null);
 
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.playbackRate = 0.5; // Set the desired playback speed
-    }
-  }, []);
   return (
     <div className="App">
-            <video id="bg-video" autoPlay loop muted>
-        <source src="dist\background.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+
       <header>
         <h2 className="title">Shane Beaman</h2>
         <nav>
