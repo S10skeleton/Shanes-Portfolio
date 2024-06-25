@@ -44,6 +44,7 @@ const projects = [
     description: "MyFlix is a custom-built streaming service designed to mirror the functionality of Netflix. Developed to cater to my personal entertainment preferences, MyFlix allows for a personalized viewing experience with a user-friendly interface, seamless video playback, and a robust library management system. This project showcases my skills in full stack development, including the use of the MERN stack (MongoDB, Express.js, React.js, Node.js), API integration, and responsive design.",
     screenshot: screenshot1,
     video: video1,
+    link: "https://myflix.mov",
   },
   {
     id: 2,
@@ -97,7 +98,11 @@ function Portfolio() {
                 alt={project.title}
                 className="static-img"
               />
-
+                            {project.link && (
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link-button">
+                  MyFlix.mov
+                </a>
+                            )}
             </div>
           </div>
         ))}

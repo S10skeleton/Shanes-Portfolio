@@ -201,6 +201,18 @@ footer {
   width: 100%;
   border-radius: 10px;
 }
+.project-link-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: var(--button-color);
+  color: var(--accent-color);
+  text-decoration: none;
+  border: 1px solid #130041;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow-color);
+  transition: background-color 0.3s ease;
+}
 
 
 @media (max-width: 1024px) {
