@@ -28,7 +28,7 @@ function AboutMe() {
     <div className="about-container">
       <div className="about-me-page">
         <h2>About Me</h2>
-        <p>Hello! I'm Shane, a versatile engineer skilled in Full Stack MERN, Python, AI prompt engineering, UI design, and fabrication/prototyping. I thrive on creating innovative solutions to advance technology for a better world.</p>
+        <p>Hello! I'm Shane, a versatile engineer skilled in Full Stack MERN, Python, AI prompt engineering, UI/UX design, and fabrication/prototyping. I thrive on creating innovative solutions to advance technology for a better world.</p>
       </div>
       <div className="selfie">
         <p>Selfie</p>
@@ -313,6 +313,9 @@ function App() {
         <p>Copyright © 2024</p>
         <p>Thank you for stopping by!</p>
       </footer>
+      <button onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})} className="back-to-top">
+        ↑ Back to Top
+      </button>
     </div>
   );
 }
