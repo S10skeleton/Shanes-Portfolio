@@ -59,7 +59,7 @@ const projects = [
       "Wags to Riches is a comprehensive pet adoption platform designed to simplify the process of finding and adopting pets. Utilizing a web API, this application provides an up-to-date list of available dogs and cats, offering basic information for each pet. Clicking on a pet's picture navigates to a detailed page with additional information and direct links to the adoption location, streamlining the adoption process. The goal of Wags to Riches is to make it easier to find adoptable animals beyond local sources, enhancing accessibility and convenience for potential pet owners.",
     screenshot: screenshot2,
     video: video2,
-    link: "Github Repo",
+    link: "https://github.com/S10skeleton/Wags-to-Riches",
 
   },
   {
@@ -69,7 +69,7 @@ const projects = [
       "The Software Developer's Daily Dashboard is a single-page web application designed to streamline a developer's daily routine. It features a daily planner for scheduling events, a weather forecast for your location, and a YouTube API integration for listening to music while planning your day. Additionally, the dashboard includes an API that accesses your GitHub repositories, providing quick and easy access to your projects. This application is a comprehensive tool to enhance productivity and organization for software developers.",
     screenshot: screenshot3,
     video: video3,
-    link: "Github Repo",
+    link: "https://github.com/S10skeleton/Daily-Dashboard",
 
   },
   {
@@ -235,10 +235,11 @@ function Resume() {
             <div className="sub-category">
               <h5>Mechanical Engineering</h5>
               <ul className="skills-list">
-                <li>CAD software (AutoCAD, SolidWorks)</li>
+                <li>CAD software (AutoCAD, Fusion 360)</li>
                 <li>Welding and fabrication</li>
                 <li>Mechanical design and analysis</li>
                 <li>Prototyping and product development</li>
+                <li>Material Science</li>
               </ul>
             </div>
           </div>
