@@ -6,9 +6,9 @@ import screenshot2 from "./assets/screenshots/Wags.png"; // Example image path
 import video2 from "./assets/videos/EmployeeTracker.webm"; 
 import screenshot3 from "./assets/screenshots/Dashboard.png"; // Example image path
 import video3 from "./assets/videos/EmployeeTracker.webm"; 
-import screenshot4 from "./assets/screenshots/Wags.png"; // Example image path
+import screenshot4 from "./assets/screenshots/ComingSoon.jpg"; // Example image path
 import video4 from "./assets/videos/EmployeeTracker.webm"; 
-import screenshot5 from "./assets/screenshots/Wags.png"; // Example image path
+import screenshot5 from "./assets/screenshots/ComingSoon.jpg"; // Example image path
 import video5 from "./assets/videos/EmployeeTracker.webm"; 
 import screenshot6 from "./assets/screenshots/HQ.jpg"; // Example image path
 import video6 from "./assets/videos/EmployeeTracker.webm"; 
@@ -62,15 +62,15 @@ const projects = [
   },
   {
     id: 4,
-    title: "Project 4",
-    description: "Project 4 description",
+    title: "VoltMon Self-Contained Voltage Monitoring Devices",
+    description: "I developed self-contained voltage monitoring devices using Arduino components to track the voltage of my motorcycle, jet ski, ATV, camper, truck, and car. The setup includes two alligator leads connecting the battery terminals to the voltage meter board. A buck converter reduces the 12-volt feed to 5 volts for the ESP32 module. This voltage meter sends the current vehicle voltage via the ESP32 WiFi board to a custom app on my phone and smart home server, integrated with the Home Assistant OS. By implementing a sleep and awake function, I reduced the parasitic draw from the device to 26.85 μW, ensuring minimal battery drain.",
     screenshot: screenshot4,
     video: video4,
   },
   {
     id: 5,
-    title: "Project 5",
-    description: "Project 5 description",
+    title: "Housing Price Web Scraper",
+    description: "The Housing Price Web Scraper is a Python-based tool designed to extract real estate listing data from online sources and present it in an easy-to-read spreadsheet format. Using requests and BeautifulSoup, this application fetches and parses HTML content to collect housing prices and addresses, which are then stored in an Excel file. The script includes robust error handling and can be customized to scrape different websites and additional data fields, making it versatile for various real estate sources. Ideal for real estate agents, homebuyers, and market analysts, this project showcases my proficiency in web scraping, data manipulation, and creating practical, data-driven solutions.",
     screenshot: screenshot5,
     video: video5,
   },
