@@ -1,23 +1,23 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from "react";
 import "./Styles/Styles.css";
 import screenshot1 from "./assets/screenshots/myflixscreenshot.png"; // Example image path
 import video1 from "./assets/videos/EmployeeTracker.webm"; // Example video path
 import screenshot2 from "./assets/screenshots/Wags.png"; // Example image path
-import video2 from "./assets/videos/EmployeeTracker.webm"; 
+import video2 from "./assets/videos/EmployeeTracker.webm";
 import screenshot3 from "./assets/screenshots/Dashboard.png"; // Example image path
-import video3 from "./assets/videos/EmployeeTracker.webm"; 
+import video3 from "./assets/videos/EmployeeTracker.webm";
 import screenshot4 from "./assets/screenshots/ComingSoon.jpg"; // Example image path
-import video4 from "./assets/videos/EmployeeTracker.webm"; 
+import video4 from "./assets/videos/EmployeeTracker.webm";
 import screenshot5 from "./assets/screenshots/ComingSoon.jpg"; // Example image path
-import video5 from "./assets/videos/EmployeeTracker.webm"; 
+import video5 from "./assets/videos/EmployeeTracker.webm";
 import screenshot6 from "./assets/screenshots/HQ.jpg"; // Example image path
-import video6 from "./assets/videos/EmployeeTracker.webm"; 
+import video6 from "./assets/videos/EmployeeTracker.webm";
 
 // Function component for the 'Home' section of the website
 function Home() {
   return (
     <div className="home-container">
-         <p className="home-text">Welcome!</p>
+      <p className="home-text">Welcome!</p>
     </div>
   );
 }
@@ -28,7 +28,12 @@ function AboutMe() {
     <div className="about-container">
       <div className="about-me-page">
         <h2>About Me</h2>
-        <p>Hello! I'm Shane, a versatile engineer skilled in Full Stack MERN, Python, AI prompt engineering, UI/UX design, and fabrication/prototyping. I thrive on creating innovative solutions to advance technology for a better world.</p>
+        <p>
+          Hello! I'm Shane, a versatile engineer skilled in Full Stack MERN,
+          Python, AI prompt engineering, UI/UX design, and
+          fabrication/prototyping. I thrive on creating innovative solutions to
+          advance technology for a better world.
+        </p>
       </div>
       <div className="selfie">
         <p>Selfie</p>
@@ -41,7 +46,8 @@ const projects = [
   {
     id: 1,
     title: "My Flix",
-    description: "MyFlix is a custom-built streaming service designed to mirror the functionality of Netflix. Developed to cater to my personal entertainment preferences, MyFlix allows for a personalized viewing experience with a user-friendly interface, seamless video playback, and a robust library management system. This project showcases my skills in full stack development, including the use of the MERN stack (MongoDB, Express.js, React.js, Node.js), API integration, and responsive design.",
+    description:
+      "MyFlix is a custom-built streaming service designed to mirror the functionality of Netflix. Developed to cater to my personal entertainment preferences, MyFlix allows for a personalized viewing experience with a user-friendly interface, seamless video playback, and a robust library management system. This project showcases my skills in full stack development, including the use of the MERN stack (MongoDB, Express.js, React.js, Node.js), API integration, and responsive design.",
     screenshot: screenshot1,
     video: video1,
     link: "https://myflix.mov",
@@ -49,37 +55,67 @@ const projects = [
   {
     id: 2,
     title: "Wags to Riches",
-    description: "Wags to Riches is a comprehensive pet adoption platform designed to simplify the process of finding and adopting pets. Utilizing a web API, this application provides an up-to-date list of available dogs and cats, offering basic information for each pet. Clicking on a pet's picture navigates to a detailed page with additional information and direct links to the adoption location, streamlining the adoption process. The goal of Wags to Riches is to make it easier to find adoptable animals beyond local sources, enhancing accessibility and convenience for potential pet owners.",
+    description:
+      "Wags to Riches is a comprehensive pet adoption platform designed to simplify the process of finding and adopting pets. Utilizing a web API, this application provides an up-to-date list of available dogs and cats, offering basic information for each pet. Clicking on a pet's picture navigates to a detailed page with additional information and direct links to the adoption location, streamlining the adoption process. The goal of Wags to Riches is to make it easier to find adoptable animals beyond local sources, enhancing accessibility and convenience for potential pet owners.",
     screenshot: screenshot2,
     video: video2,
+    link: "Github Repo",
+
   },
   {
     id: 3,
     title: "Daily Dashboard",
-    description: "The Software Developer's Daily Dashboard is a single-page web application designed to streamline a developer's daily routine. It features a daily planner for scheduling events, a weather forecast for your location, and a YouTube API integration for listening to music while planning your day. Additionally, the dashboard includes an API that accesses your GitHub repositories, providing quick and easy access to your projects. This application is a comprehensive tool to enhance productivity and organization for software developers.",
+    description:
+      "The Software Developer's Daily Dashboard is a single-page web application designed to streamline a developer's daily routine. It features a daily planner for scheduling events, a weather forecast for your location, and a YouTube API integration for listening to music while planning your day. Additionally, the dashboard includes an API that accesses your GitHub repositories, providing quick and easy access to your projects. This application is a comprehensive tool to enhance productivity and organization for software developers.",
     screenshot: screenshot3,
     video: video3,
+    link: "Github Repo",
+
   },
   {
     id: 4,
     title: "VoltMon Self-Contained Voltage Monitoring Devices",
-    description: "I developed self-contained voltage monitoring devices using Arduino components to track the voltage of my motorcycle, jet ski, ATV, camper, truck, and car. The setup includes two alligator leads connecting the battery terminals to the voltage meter board. A buck converter reduces the 12-volt feed to 5 volts for the ESP32 module. This voltage meter sends the current vehicle voltage via the ESP32 WiFi board to a custom app on my phone and smart home server, integrated with the Home Assistant OS. By implementing a sleep and awake function, I reduced the parasitic draw from the device to 26.85 μW, ensuring minimal battery drain.",
+    description:
+      "I developed self-contained voltage monitoring devices using Arduino components to track the voltage of my motorcycle, jet ski, ATV, camper, truck, and car. The setup includes two alligator leads connecting the battery terminals to the voltage meter board. A buck converter reduces the 12-volt feed to 5 volts for the ESP32 module. This voltage meter sends the current vehicle voltage via the ESP32 WiFi board to a custom app on my phone and smart home server, integrated with the Home Assistant OS. By implementing a sleep and awake function, I reduced the parasitic draw from the device to 26.85 μW, ensuring minimal battery drain.",
     screenshot: screenshot4,
     video: video4,
   },
   {
     id: 5,
     title: "Housing Price Web Scraper",
-    description: "The Housing Price Web Scraper is a Python-based tool designed to extract real estate listing data from online sources and present it in an easy-to-read spreadsheet format. Using requests and BeautifulSoup, this application fetches and parses HTML content to collect housing prices and addresses, which are then stored in an Excel file. The script includes robust error handling and can be customized to scrape different websites and additional data fields, making it versatile for various real estate sources. Ideal for real estate agents, homebuyers, and market analysts, this project showcases my proficiency in web scraping, data manipulation, and creating practical, data-driven solutions.",
+    description:
+      "The Housing Price Web Scraper is a Python-based tool designed to extract real estate listing data from online sources and present it in an easy-to-read spreadsheet format. Using requests and BeautifulSoup, this application fetches and parses HTML content to collect housing prices and addresses, which are then stored in an Excel file. The script includes robust error handling and can be customized to scrape different websites and additional data fields, making it versatile for various real estate sources. Ideal for real estate agents, homebuyers, and market analysts, this project showcases my proficiency in web scraping, data manipulation, and creating practical, data-driven solutions.",
     screenshot: screenshot5,
     video: video5,
   },
   {
     id: 6,
     title: "Smart Entertainment Command Center",
-    description: "I designed and built this custom entertainment and work station from scratch, combining functionality with aesthetics. The station features a steel frame and particle board panels, ensuring both durability and stability. It is fully motorized, allowing the 65-inch TV to tilt and travel vertically from the desk to the ceiling, all controlled through a convenient app on my phone.The LED lighting system is powered by ESP32 boards and WLED, providing customizable ambient lighting. For audio, I incorporated two 12-inch subwoofers connected to a car amplifier, delivering powerful bass for movies and immersive vibrations for video games. To enhance the overall look, I wrapped the structure in carbon fiber and brushed steel vinyl wrap, while the tops are covered in neoprene for a sleek, professional finish. This setup not only allows me to work efficiently at my desk but also provides an exceptional entertainment experience for watching movies and gaming.",
+    description:
+      "I designed and built this custom entertainment and work station from scratch, combining functionality with aesthetics. The station features a steel frame and particle board panels, ensuring both durability and stability. It is fully motorized, allowing the 65-inch TV to tilt and travel vertically from the desk to the ceiling, all controlled through a convenient app on my phone.The LED lighting system is powered by ESP32 boards and WLED, providing customizable ambient lighting. For audio, I incorporated two 12-inch subwoofers connected to a car amplifier, delivering powerful bass for movies and immersive vibrations for video games. To enhance the overall look, I wrapped the structure in carbon fiber and brushed steel vinyl wrap, while the tops are covered in neoprene for a sleek, professional finish. This setup not only allows me to work efficiently at my desk but also provides an exceptional entertainment experience for watching movies and gaming.",
     screenshot: screenshot6,
     video: video6,
+  },
+  {
+    id: 6,
+    title: "Employee Tracker",
+    description:
+      "Employee Tracker is a command-line application designed to streamline the management of a company's employee database. This powerful tool allows for easy viewing and interaction with information stored in a database, enabling users to organize and plan their business more effectively by managing departments, roles, and employees. Built using Node.js, Inquirer, and MySQL, Employee Tracker offers an intuitive interface for non-developers to handle complex databases with ease. The application supports essential functions such as adding new employees, updating roles, and viewing department budgets, making it an efficient solution for maintaining up-to-date employee records. This project demonstrates my skills in backend development, database management, and command-line interface design, highlighting my ability to create practical solutions that enhance business operations.",
+    link: "https://github.com/S10skeleton/Shanes-Employee-Tracker",
+  },
+  {
+    id: 6,
+    title: "Social Network API",
+    description:
+      "Social Network API is a sophisticated backend application engineered to simulate the data management of a social network using a NoSQL database. This API-driven solution allows users to share their thoughts, react to their friends' posts, and manage their friends list, all through a set of well-defined endpoints. The API supports essential social networking features such as creating, reading, updating, and deleting user-generated content, along with the ability to react to and comment on friends' posts. Additionally, it facilitates dynamic friend list management, enabling users to send, accept, and remove friend requests seamlessly. This project highlights my expertise in backend development, API design, and database management, showcasing my ability to build scalable and efficient data-driven applications that cater to real-world social networking requirements.",
+    link: "https://github.com/S10skeleton/Shanes-Social-Network-API",
+  },
+  {
+    id: 6,
+    title: "Python Movie Organizer",
+    description:
+      "I developed a robust Python program designed to streamline the process of populating a movie database. This application takes a text list of movies and utilizes the OMDb API to fetch comprehensive details such as descriptions, release dates, directors, genres, and actors. By automating the data retrieval process, the program ensures accuracy and consistency, eliminating the need for manual data entry. Once the data is collected, the program processes and converts it into a well-structured SQL seed file, optimized for seamless injection into a SQL database. This not only significantly reduces the time and effort required to manage movie data but also enhances the overall quality and scalability of the database. The project showcases my proficiency in Python, API integration, and database management, demonstrating my ability to create efficient and reliable data processing solutions.",
+    link: "https://github.com/S10skeleton/Movie-Organizer",
   },
 ];
 
@@ -93,16 +129,17 @@ function Portfolio() {
             <h3>{project.title}</h3>
             <p className="project-description">{project.description}</p>
             <div className="media-container">
-              <img
-                src={project.screenshot}
-                alt={project.title}
-                className="static-img"
-              />
-                            {project.link && (
-                <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link-button">
-                  MyFlix.mov
+              <img src={project.screenshot} className="static-img" />
+              {project.link && (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-link-button"
+                >
+                  Application
                 </a>
-                            )}
+              )}
             </div>
           </div>
         ))}
@@ -261,14 +298,9 @@ function Resume() {
   );
 }
 
-
-
-
 function App() {
-
   return (
     <div className="App">
-
       <header>
         <h2 className="title">Shane Beaman</h2>
         <nav>
@@ -313,7 +345,10 @@ function App() {
         <p>Copyright © 2024</p>
         <p>Thank you for stopping by!</p>
       </footer>
-      <button onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})} className="back-to-top">
+      <button
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        className="back-to-top"
+      >
         ↑ Back to Top
       </button>
     </div>
