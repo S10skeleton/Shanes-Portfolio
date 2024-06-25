@@ -67,11 +67,6 @@ header {
 }
 
 
-@media (pointer: coarse) and (hover: none) {
-  video#bg-video {
-    display: none;
-  }
-}
 
 /* Additional Styles */
 .title {
@@ -215,20 +210,7 @@ footer {
 }
 
 
-@media (max-width: 1024px) {
-  .portfolio-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
-@media (max-width: 650px) {
-  .portfolio-container {
-    grid-template-columns: 1fr;
-  }
-  .portfolio-item:hover {
-    transform: scale(1.05);
-  }
-}
 
 /* Contact.css */
 .contact-page {
@@ -262,13 +244,7 @@ p {
   margin-top: 15px;
 }
 
-@media (max-width: 800px) {
-  .contact-page {
-    width: 100%;
-    max-width: 100%;
-    border-radius: 0;
-  }
-}
+
 
 
 /* Resume.css */
@@ -338,4 +314,99 @@ p {
 
 .skills-list li {
   margin-bottom: 5px;
+}
+.back-to-top {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 10px 15px;
+  background-color: var(--button-color);
+  color: var(--accent-color);
+  border: none;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow-color);
+  cursor: pointer;
+  z-index: 1000; /* Ensure it stays above other elements */
+  transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+  color: var(--hover-accent-color);
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .title {
+    font-size: 2em;
+    margin-left: 5%;
+  }
+  .linkList {
+    margin-right: 50px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-container {
+    grid-template-columns: 1fr;
+  }
+  .title {
+    font-size: 1.8em;
+  }
+  .contact-page {
+    margin: 50px auto;
+    padding: 15px;
+  }
+  .resume-page h3 {
+    font-size: 25px;
+  }
+  .resume-page p,
+  .resume-page a {
+    font-size: 18px;
+  }
+  .portfolio-item:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5em;
+  }
+  .linkList {
+    margin-right: 20px;
+  }
+  .project-description {
+    font-size: small;
+  }
+  nav ul li {
+    margin: 5px;
+    padding: 10px;
+  }
+  .contact-page {
+    margin: 30px auto;
+    padding: 10px;
+  }
+  .resume-page h3 {
+    font-size: 22px;
+  }
+  .resume-page p,
+  .resume-page a {
+    font-size: 16px;
+  }
+  .portfolio-item:hover {
+    transform: none;
+  }
 }
