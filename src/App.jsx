@@ -66,10 +66,10 @@ const projects = [
     id: 3,
     title: "Daily Dashboard",
     description:
-      "The Software Developer's Daily Dashboard is a single-page web application designed to streamline a developer's daily routine. It features a daily planner for scheduling events, a weather forecast for your location, and a YouTube API integration for listening to music while planning your day. Additionally, the dashboard includes an API that accesses your GitHub repositories, providing quick and easy access to your projects. This application is a comprehensive tool to enhance productivity and organization for software developers.",
+      "The Software Developer's Daily Dashboard is a single-page web application designed to streamline a developer's daily routine. It features a daily planner for scheduling events, a weather forecast for your location, and a YouTube API integration for listening to music while planning your day. Additionally, the background image changes based on the time of day, the dashboard includes an API that accesses your GitHub repositories, providing quick and easy access to your projects. This application is a comprehensive tool to enhance productivity and organization for software developers.",
     screenshot: screenshot3,
     video: video3,
-    link: "https://github.com/S10skeleton/Daily-Dashboard",
+    link: "https://daydash.netlify.app/",
 
   },
   {
@@ -82,7 +82,7 @@ const projects = [
   },
   {
     id: 5,
-    title: "Housing Price Web Scraper",
+    title: "Apocalypse Auto",
     description:
       "The Housing Price Web Scraper is a Python-based tool designed to extract real estate listing data from online sources and present it in an easy-to-read spreadsheet format. Using requests and BeautifulSoup, this application fetches and parses HTML content to collect housing prices and addresses, which are then stored in an Excel file. The script includes robust error handling and can be customized to scrape different websites and additional data fields, making it versatile for various real estate sources. Ideal for real estate agents, homebuyers, and market analysts, this project showcases my proficiency in web scraping, data manipulation, and creating practical, data-driven solutions.",
     screenshot: screenshot5,
@@ -97,21 +97,20 @@ const projects = [
     video: video6,
   },
   {
-    id: 6,
-    title: "Employee Tracker",
-    description:
-      "Employee Tracker is a command-line application designed to streamline the management of a company's employee database. This powerful tool allows for easy viewing and interaction with information stored in a database, enabling users to organize and plan their business more effectively by managing departments, roles, and employees. Built using Node.js, Inquirer, and MySQL, Employee Tracker offers an intuitive interface for non-developers to handle complex databases with ease. The application supports essential functions such as adding new employees, updating roles, and viewing department budgets, making it an efficient solution for maintaining up-to-date employee records. This project demonstrates my skills in backend development, database management, and command-line interface design, highlighting my ability to create practical solutions that enhance business operations.",
-    link: "https://github.com/S10skeleton/Shanes-Employee-Tracker",
-  },
-  {
-    id: 6,
+    id: 8,
     title: "Social Network API",
     description:
       "Social Network API is a sophisticated backend application engineered to simulate the data management of a social network using a NoSQL database. This API-driven solution allows users to share their thoughts, react to their friends' posts, and manage their friends list, all through a set of well-defined endpoints. The API supports essential social networking features such as creating, reading, updating, and deleting user-generated content, along with the ability to react to and comment on friends' posts. Additionally, it facilitates dynamic friend list management, enabling users to send, accept, and remove friend requests seamlessly. This project highlights my expertise in backend development, API design, and database management, showcasing my ability to build scalable and efficient data-driven applications that cater to real-world social networking requirements.",
     link: "https://github.com/S10skeleton/Shanes-Social-Network-API",
   },
   {
-    id: 6,
+    id: 7,
+    title: "Housing Price Web Scraper",
+    description:
+      "The Housing Price Web Scraper is a Python-based tool designed to extract real estate listing data from online sources and present it in an easy-to-read spreadsheet format. Using requests and BeautifulSoup, this application fetches and parses HTML content to collect housing prices and addresses, which are then stored in an Excel file. The script includes robust error handling and can be customized to scrape different websites and additional data fields, making it versatile for various real estate sources. Ideal for real estate agents, homebuyers, and market analysts, this project showcases my proficiency in web scraping, data manipulation, and creating practical, data-driven solutions.",
+  },
+  {
+    id: 9,
     title: "Python Movie Organizer",
     description:
       "I developed a robust Python program designed to streamline the process of populating a movie database. This application takes a text list of movies and utilizes the OMDb API to fetch comprehensive details such as descriptions, release dates, directors, genres, and actors. By automating the data retrieval process, the program ensures accuracy and consistency, eliminating the need for manual data entry. Once the data is collected, the program processes and converts it into a well-structured SQL seed file, optimized for seamless injection into a SQL database. This not only significantly reduces the time and effort required to manage movie data but also enhances the overall quality and scalability of the database. The project showcases my proficiency in Python, API integration, and database management, demonstrating my ability to create efficient and reliable data processing solutions.",
