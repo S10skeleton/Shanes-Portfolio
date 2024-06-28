@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Styles/Styles.css";
 import screenshot1 from "./assets/screenshots/myflixscreenshot.png"; // Example image path
 import video1 from "./assets/videos/EmployeeTracker.webm"; // Example video path
@@ -8,7 +8,7 @@ import screenshot3 from "./assets/screenshots/Dashboard.png"; // Example image p
 import video3 from "./assets/videos/EmployeeTracker.webm";
 import screenshot4 from "./assets/screenshots/ComingSoon.jpg"; // Example image path
 import video4 from "./assets/videos/EmployeeTracker.webm";
-import screenshot5 from "./assets/screenshots/ComingSoon.jpg"; // Example image path
+import screenshot5 from "./assets/screenshots/Fiero2.jpg"; // Example image path
 import video5 from "./assets/videos/EmployeeTracker.webm";
 import screenshot6 from "./assets/screenshots/HQ.jpg"; // Example image path
 import video6 from "./assets/videos/EmployeeTracker.webm";
@@ -84,9 +84,11 @@ const projects = [
     id: 5,
     title: "Apocalypse Auto",
     description:
-      "The Housing Price Web Scraper is a Python-based tool designed to extract real estate listing data from online sources and present it in an easy-to-read spreadsheet format. Using requests and BeautifulSoup, this application fetches and parses HTML content to collect housing prices and addresses, which are then stored in an Excel file. The script includes robust error handling and can be customized to scrape different websites and additional data fields, making it versatile for various real estate sources. Ideal for real estate agents, homebuyers, and market analysts, this project showcases my proficiency in web scraping, data manipulation, and creating practical, data-driven solutions.",
+      "I own and operate Apocalypse Auto, an automotive design and fabrication company specializing in Mad Max-themed and apocalypse-ready vehicles. Our YouTube channel, also named Apocalypse Auto, showcases our unique builds and the adventures we embark on as a business. One notable project was collaborating with Discovery Channel producers to create a pilot and six episodes, although the series was unfortunately canceled midway. Despite slowing down our major shop projects and YouTube content due to alternate career directions, I remain active in the business. Featured here is my heavily modified 1987 Pontiac Fiero, transformed into an off-road buggy, which stands as my first and favorite vehicle.",
     screenshot: screenshot5,
     video: video5,
+    link: "https://youtube.com/apocalypseauto",
+
   },
   {
     id: 6,
@@ -124,24 +126,43 @@ function Portfolio() {
       <h2>My Projects</h2>
       <div className="portfolio-container">
         {projects.map((project) => (
-          <div className="portfolio-item" key={project.id}>
-            <h3>{project.title}</h3>
-            <p className="project-description">{project.description}</p>
-            <div className="media-container">
-              <img src={project.screenshot} className="static-img" />
-              {project.link && (
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-link-button"
-                >
-                  Application
-                </a>
-              )}
-            </div>
-          </div>
+          <PortfolioItem key={project.id} project={project} />
         ))}
+      </div>
+    </div>
+  );
+}
+
+function PortfolioItem({ project }) {
+  const [showFullDescription, setShowFullDescription] = useState(false);
+
+  const toggleDescription = () => {
+    setShowFullDescription((prev) => !prev);
+  };
+
+  return (
+    <div className="portfolio-item">
+      <h3>{project.title}</h3>
+      <p className="project-description">
+        {showFullDescription
+          ? project.description
+          : `${project.description.substring(0, 150)}...`}
+        <span className="more-link" onClick={toggleDescription}>
+          {showFullDescription ? " Show less" : " Show more..."}
+        </span>
+      </p>
+      <div className="media-container">
+        <img src={project.screenshot} className="static-img" />
+        {project.link && (
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-link-button"
+          >
+            Application
+          </a>
+        )}
       </div>
     </div>
   );
