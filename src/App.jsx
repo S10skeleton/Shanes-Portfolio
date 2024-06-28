@@ -29,7 +29,15 @@ function AboutMe() {
       <div className="about-me-page">
         <h2>About Me</h2>
         <p>
-        As a seasoned entrepreneur with 15 years of experience, I specialize in creating innovative solutions tailored to clients' needs. My expertise spans CAD design, coding, 3D modeling/printing, physical fabrication/prototyping, and Agile methodology. Driven by a passion for combining leadership, engineering, and coding to deliver high-quality, reliable results. I am committed to creativity, collaboration, and exceeding customer expectations. Always eager to learn new technologies, I strive to achieve what others deem impossible.
+          As a seasoned entrepreneur with 15 years of experience, I specialize
+          in creating innovative solutions tailored to clients' needs. My
+          expertise spans CAD design, coding, 3D modeling/printing, physical
+          fabrication/prototyping, and Agile methodology. Driven by a passion
+          for combining leadership, engineering, and coding to deliver
+          high-quality, reliable results. I am committed to creativity,
+          collaboration, and exceeding customer expectations. Always eager to
+          learn new technologies, I strive to achieve what others deem
+          impossible.
         </p>
       </div>
       <div className="selfie">
@@ -57,7 +65,6 @@ const projects = [
     screenshot: screenshot2,
     video: video2,
     link: "https://github.com/S10skeleton/Wags-to-Riches",
-
   },
   {
     id: 3,
@@ -67,7 +74,6 @@ const projects = [
     screenshot: screenshot3,
     video: video3,
     link: "https://daydash.netlify.app/",
-
   },
   {
     id: 4,
@@ -85,7 +91,6 @@ const projects = [
     screenshot: screenshot5,
     video: video5,
     link: "https://youtube.com/apocalypseauto",
-
   },
   {
     id: 6,
@@ -307,11 +312,17 @@ function Resume() {
           </div>
         </div>
       </div>
-      <h2>My Resume</h2>
-      <a href="path-to-your-resume.pdf" download>
-        Download My Resume
-      </a>
-      <p>PDF Placeholder</p>
+      <div className="resume">
+        <h2>My Resume</h2>
+        <div className="pdf-container">
+          <iframe
+            src="src/assets/screenshots/resume2.pdf"
+            title="Resume"
+            frameBorder="0"
+            scrolling="yes"
+          ></iframe>
+        </div>
+      </div>
     </div>
   );
 }
