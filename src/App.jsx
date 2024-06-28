@@ -29,10 +29,7 @@ function AboutMe() {
       <div className="about-me-page">
         <h2>About Me</h2>
         <p>
-          Hello! I'm Shane, a versatile engineer skilled in Full Stack MERN,
-          Python, AI prompt engineering, UI/UX design, and
-          fabrication/prototyping. I thrive on creating innovative solutions to
-          advance technology for a better world.
+        As a seasoned entrepreneur with 15 years of experience, I specialize in creating innovative solutions tailored to clients' needs. My expertise spans CAD design, coding, 3D modeling/printing, physical fabrication/prototyping, and Agile methodology. Driven by a passion for combining leadership, engineering, and coding to deliver high-quality, reliable results. I am committed to creativity, collaboration, and exceeding customer expectations. Always eager to learn new technologies, I strive to achieve what others deem impossible.
         </p>
       </div>
       <div className="selfie">
@@ -146,7 +143,7 @@ function PortfolioItem({ project }) {
       <p className="project-description">
         {showFullDescription
           ? project.description
-          : `${project.description.substring(0, 150)}...`}
+          : `${project.description.substring(0, 170)}...`}
         <span className="more-link" onClick={toggleDescription}>
           {showFullDescription ? " Show less" : " Show more..."}
         </span>
