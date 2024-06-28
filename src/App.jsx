@@ -316,7 +316,7 @@ function Resume() {
         <h2>My Resume</h2>
         <div className="pdf-container">
           <iframe
-            src="src/assets/screenshots/resume2.pdf"
+            src="public/resume2.pdf"
             title="Resume"
             frameBorder="0"
             scrolling="yes"
