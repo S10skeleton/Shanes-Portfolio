@@ -122,11 +122,22 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 250px;
   width: 100%;
-  margin: 50px auto;
   padding: 20px;
 }
+
+.selfie {
+  height: 1200px;
+  width: auto;
+}
+
+.selfie img {
+  max-height: 100%;  /* Ensures the image fits within its container */
+  height: auto;    /* Maintains the aspect ratio */
+  display: block;  /* Removes any extra space below the image */
+  margin: 0 auto;
+}
+
 
 .home-text{
   font-size: 40px;
@@ -137,13 +148,8 @@ border-radius: 15px;
 box-shadow: var(--box-shadow-color);
   
 }
-.selfie, .about-me-page {
-  flex: 1;
-  text-align: center;
-}
-.selfie {
-  max-width: 400px;
-}
+
+
 .about-me-page {
   max-width: 400px;
   padding: 20px;
@@ -196,7 +202,7 @@ box-shadow: var(--box-shadow-color);
   transform: scale(1.2);
 }
 .more-link {
-  color: blue;
+  color: rgb(102, 102, 255);
   cursor: pointer;
   margin-left: 5px;
 }

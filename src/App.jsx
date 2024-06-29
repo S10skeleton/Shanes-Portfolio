@@ -26,6 +26,9 @@ function Home() {
 function AboutMe() {
   return (
     <div className="about-container">
+      <div className="selfie">
+        <img src="public\Me.png" alt="selfie" />
+      </div>
       <div className="about-me-page">
         <h2>About Me</h2>
         <p>
@@ -39,9 +42,6 @@ function AboutMe() {
           learn new technologies, I strive to achieve what others deem
           impossible.
         </p>
-      </div>
-      <div className="selfie">
-        <p>Selfie</p>
       </div>
     </div>
   );
