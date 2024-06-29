@@ -27,7 +27,7 @@ function AboutMe() {
   return (
     <div className="about-container">
       <div className="selfie">
-        <img src="/Me.png" alt="selfie" />
+        <img src="/Me2.png" alt="selfie" />
       </div>
       <div className="about-me-page">
         <h2>About Me</h2>
