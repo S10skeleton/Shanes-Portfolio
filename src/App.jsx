@@ -314,12 +314,12 @@ function Resume() {
       </div>
       <div className="resume">
         <h2>My Resume</h2>
-        <a href="/resume2.pdf" download>
+        <a href="/resume3.pdf" download>
           Click to Download PDF
         </a>
         <div className="pdf-container">
           <iframe
-            src="/resume2.pdf"
+            src="/resume3.pdf"
             title="Resume"
             frameBorder="0"
             scrolling="yes"
