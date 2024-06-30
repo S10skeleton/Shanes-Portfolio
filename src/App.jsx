@@ -26,9 +26,7 @@ function Home() {
 function AboutMe() {
   return (
     <div className="about-container">
-      <div className="selfie">
-        <img src="/Me2.png" alt="selfie" />
-      </div>
+      
       <div className="about-me-page">
         <h2>About Me</h2>
         <p>
@@ -42,6 +40,9 @@ function AboutMe() {
           learn new technologies, I strive to achieve what others deem
           impossible.
         </p>
+      </div>
+      <div className="selfie">
+        <img src="/Me4.png" alt="selfie" />
       </div>
     </div>
   );
@@ -314,12 +315,12 @@ function Resume() {
       </div>
       <div className="resume">
         <h2>My Resume</h2>
-        <a href="/resume3.pdf" download>
+        <a href="/resume4.pdf" download>
           Click to Download PDF
         </a>
         <div className="pdf-container">
           <iframe
-            src="/resume3.pdf"
+            src="/resume4.pdf"
             title="Resume"
             frameBorder="0"
             scrolling="yes"
