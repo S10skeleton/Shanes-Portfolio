@@ -145,7 +145,7 @@ footer {
 }
 
 .about-me-page {
-  max-width: 100%;
+  max-width: 600px;
   width: 50%;
   padding: 20px;
   background-color: var(--button-color);
