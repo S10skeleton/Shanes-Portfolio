@@ -47,7 +47,6 @@ body {
   z-index: 0;
 }
 
-
 header {
   width: 100%;
   padding: 20px 20px;
@@ -56,8 +55,6 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
-
 
 /* Additional Styles */
 .title {
@@ -115,45 +112,41 @@ footer {
   padding: 5px;
 }
 
-
 /* AboutMe.css */
 .about-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: left;
-  max-height: 800px;
   width: 100%;
   padding: 20px;
+  gap: 20px;
 }
 
 .selfie {
-  height: 1200px;
-  width: auto;
-
+  max-width: 100%;
+  width: 50%;
 }
 
 .selfie img {
-  max-height: 100%;  /* Ensures the image fits within its container */
+  width: 100%;  /* Ensures the image fits within its container */
   height: auto;    /* Maintains the aspect ratio */
   display: block;  /* Removes any extra space below the image */
   margin: 0 auto;
 }
 
-
-.home-text{
+.home-text {
   font-size: 40px;
   background-color: black;
-padding: 15px;
-max-width: 220px;
-border-radius: 15px;
-box-shadow: var(--box-shadow-color);
-  
+  padding: 15px;
+  max-width: 220px;
+  border-radius: 15px;
+  box-shadow: var(--box-shadow-color);
 }
 
-
 .about-me-page {
-  max-width: 400px;
+  max-width: 100%;
+  width: 50%;
   padding: 20px;
   background-color: var(--button-color);
   box-shadow: var(--box-shadow-color);
@@ -174,10 +167,10 @@ box-shadow: var(--box-shadow-color);
 
 .portfolio-page h2 {
   background-color: black;
-padding: 10px;
-max-width: 170px;
-border-radius: 15px;
-box-shadow: var(--box-shadow-color);
+  padding: 10px;
+  max-width: 170px;
+  border-radius: 15px;
+  box-shadow: var(--box-shadow-color);
 }
 .project-description {
   font-size: small;
@@ -229,9 +222,6 @@ box-shadow: var(--box-shadow-color);
   transition: background-color 0.3s ease;
 }
 
-
-
-
 /* Contact.css */
 .contact-page {
   display: flex;
@@ -263,9 +253,6 @@ p {
 .contact-page a:last-child {
   margin-top: 15px;
 }
-
-
-
 
 /* Resume.css */
 .resume-page {
@@ -336,11 +323,11 @@ p {
   text-decoration: underline;
 }
 .resume-page h3 {
-background-color: black;
-padding: 10px;
-max-width: 100px;
-border-radius: 15px;
-box-shadow: var(--box-shadow-color);
+  background-color: black;
+  padding: 10px;
+  max-width: 100px;
+  border-radius: 15px;
+  box-shadow: var(--box-shadow-color);
 }
 
 .sub-columns {
@@ -403,7 +390,11 @@ box-shadow: var(--box-shadow-color);
   }
   .about-container {
     flex-direction: column;
-    gap: 50px;
+    align-items: center;
+    gap: 20px;
+  }
+  .selfie, .about-me-page {
+    width: 80%;
   }
   .title {
     font-size: 2em;
@@ -450,8 +441,6 @@ box-shadow: var(--box-shadow-color);
   }
   .portfolio-item:hover {
     transform: none;
-      /* Adjust "Back to Top" button for smaller screens */
-
   }
   .back-to-top {
     top: 10px;
@@ -493,12 +482,18 @@ box-shadow: var(--box-shadow-color);
   .portfolio-item:hover {
     transform: none;
   }
-    /* Adjust "Back to Top" button for smaller screens */
-    .back-to-top {
-      top: 10px;
-      left: 10px;
-      padding: 8px 12px;
-      font-size: 14px;
-    }
-
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .selfie, .about-me-page {
+    width: 100%;
+  }
+  .back-to-top {
+    top: 10px;
+    left: 10px;
+    padding: 8px 12px;
+    font-size: 14px;
+  }
 }
