@@ -80,7 +80,7 @@ const projects = [
     id: 4,
     title: "VoltMon Self-Contained Voltage Monitoring Devices",
     description:
-      "I developed self-contained voltage monitoring devices using Arduino components to track the voltage of my motorcycle, jet ski, ATV, camper, truck, and car. The setup includes two alligator leads connecting the battery terminals to the voltage meter board. A buck converter reduces the 12-volt feed to 5 volts for the ESP-01 module. This voltage meter sends the current vehicle voltage via the ESP-01 WiFi board to a custom app on my phone and smart home server, integrated with the Home Assistant OS. By implementing a sleep and awake function, I reduced the parasitic draw from the device to 26.85 μW, ensuring minimal battery drain.",
+      "I developed self-contained voltage monitoring devices using Arduino components to track the voltage of my motorcycle, jet ski, ATV, camper, truck, and car. The setup includes two alligator leads connecting the battery terminals to the voltage meter board. A buck converter reduces the 12-volt feed to 3.3 volts for the ESP-01 module. This voltage meter sends the current vehicle voltage via the ESP-01 WiFi board to a custom app on my phone and smart home server, integrated with the Home Assistant OS. By implementing a sleep and awake function, I reduced the parasitic draw from the device to 26.85 μW, ensuring minimal battery drain.",
     screenshot: screenshot4,
     video: video4,
   },
