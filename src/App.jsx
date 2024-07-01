@@ -88,7 +88,7 @@ const projects = [
     id: 5,
     title: "Apocalypse Auto",
     description:
-      "I own and operate Apocalypse Auto, an automotive design and fabrication company specializing in Mad Max-themed and apocalypse-ready vehicles. Our YouTube channel, also named Apocalypse Auto, showcases our unique builds and the adventures we embark on as a business. One notable project was collaborating with Discovery Channel producers to create a pilot and six episodes, although the series was unfortunately canceled midway. Despite slowing down our major shop projects and YouTube content due to alternate career directions, I remain active in the business. Featured here is my heavily modified 1987 Pontiac Fiero, transformed into an off-road buggy, which stands as my first and favorite vehicle.",
+      "I own and operate Apocalypse Auto, an automotive design and fabrication company specializing in Mad Max-themed and apocalypse-ready vehicles. Our YouTube channel (30k Subs), also named Apocalypse Auto, showcases our unique builds and the adventures we embark on as a business. One notable project was collaborating with Discovery Channel producers to create a pilot and six episodes, although the series was unfortunately canceled midway. Despite slowing down our major shop projects and YouTube content due to alternate career directions, I remain active in the business. Featured here is my heavily modified 1987 Pontiac Fiero, transformed into an off-road buggy, which stands as my first and favorite vehicle.",
     screenshot: screenshot5,
     video: video5,
     link: "https://youtube.com/apocalypseauto",
