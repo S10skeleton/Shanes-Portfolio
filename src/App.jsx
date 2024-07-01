@@ -6,7 +6,7 @@ import screenshot2 from "./assets/screenshots/Wags.png"; // Example image path
 import video2 from "./assets/videos/EmployeeTracker.webm";
 import screenshot3 from "./assets/screenshots/Dashboard.png"; // Example image path
 import video3 from "./assets/videos/EmployeeTracker.webm";
-import screenshot4 from "./assets/screenshots/voltmon1.png"; // Example image path
+import screenshot4 from "./assets/screenshots/Voltmon1.png"; // Example image path
 import video4 from "./assets/videos/EmployeeTracker.webm";
 import screenshot5 from "./assets/screenshots/Fiero2.jpg"; // Example image path
 import video5 from "./assets/videos/EmployeeTracker.webm";
