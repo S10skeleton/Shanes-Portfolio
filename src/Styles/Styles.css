@@ -6,7 +6,7 @@
   --hover-accent-color: #6e0000;
   --button-color: rgb(0, 0, 0, 0.85);
   --box-shadow-color: 3px 4px 10px rgb(68, 0, 0);
-  font-family: 'Share Tech Mono',Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Roboto','Share Tech Mono',Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 800;
   font-synthesis: none;
@@ -56,7 +56,7 @@ header {
   align-items: center;
 }
 
-/* Additional Styles */
+/* Header Styles */
 .title {
   font-size: 2.5em;
   margin-left: 10%;
@@ -131,9 +131,9 @@ footer {
 }
 
 .selfie img {
-  width: 100%;  /* Ensures the image fits within its container */
-  height: auto;    /* Maintains the aspect ratio */
-  display: block;  /* Removes any extra space below the image */
+  width: 100%;  
+  height: auto;   
+  display: block; 
   margin: 0 auto;
 }
 
@@ -284,7 +284,7 @@ p {
 .resume-page a,
 .skills-container {
   width: 100%;
-  max-width: 1200px; /* Adjusted to a wider container */
+  max-width: 1200px; 
   text-align: center;
   margin-bottom: 20px;
 }
@@ -307,8 +307,8 @@ p {
 }
 
 .pdf-container {
-  width: 800px; /* Adjust width as needed */
-  height: 400px; /* Adjust height as needed */
+  width: 800px; 
+  height: 400px; 
   overflow: hidden;
   border: 1px solid #ccc;
   margin-top: 20px;
@@ -382,7 +382,7 @@ p {
   border-radius: 10px;
   box-shadow: var(--box-shadow-color);
   cursor: pointer;
-  z-index: 1000; /* Ensure it stays above other elements */
+  z-index: 1000;
   transition: background-color 0.3s ease;
 }
 
@@ -393,8 +393,8 @@ p {
 /* Media Queries */
 @media (max-width: 1024px) {
   .pdf-container {
-    width: 600px; /* Adjust width for tablets */
-    height: 350px; /* Adjust height for tablets */
+    width: 600px; 
+    height: 350px; 
   }
   .portfolio-container {
     grid-template-columns: repeat(2, 1fr);
@@ -430,8 +430,8 @@ p {
 
 @media (max-width: 768px) {
   .pdf-container {
-    width: 100%; /* Full width for small tablets and large phones */
-    height: 300px; /* Adjust height for small tablets */
+    width: 100%; 
+    height: 300px; 
   }
   .portfolio-container {
     grid-template-columns: 1fr;
@@ -463,8 +463,8 @@ p {
 
 @media (max-width: 480px) {
   .pdf-container {
-    width: 100%; /* Full width for phones */
-    height: 250px; /* Adjust height for phones */
+    width: 100%; 
+    height: 250px; 
   }
   .title {
     font-size: 1.5em;

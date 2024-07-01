@@ -1,16 +1,16 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Styles/Styles.css";
-import screenshot1 from "./assets/screenshots/myflixscreenshot.png"; // Example image path
-import video1 from "./assets/videos/EmployeeTracker.webm"; // Example video path
-import screenshot2 from "./assets/screenshots/Wags.png"; // Example image path
+import screenshot1 from "./assets/screenshots/myflixscreenshot.png";
+import video1 from "./assets/videos/EmployeeTracker.webm";
+import screenshot2 from "./assets/screenshots/Wags.png";
 import video2 from "./assets/videos/EmployeeTracker.webm";
-import screenshot3 from "./assets/screenshots/Dashboard.png"; // Example image path
+import screenshot3 from "./assets/screenshots/Dashboard.png";
 import video3 from "./assets/videos/EmployeeTracker.webm";
-import screenshot4 from "./assets/screenshots/Voltmon1.png"; // Example image path
+import screenshot4 from "./assets/screenshots/Voltmon1.png";
 import video4 from "./assets/videos/EmployeeTracker.webm";
-import screenshot5 from "./assets/screenshots/Fiero2.jpg"; // Example image path
+import screenshot5 from "./assets/screenshots/Fiero2.jpg";
 import video5 from "./assets/videos/EmployeeTracker.webm";
-import screenshot6 from "./assets/screenshots/HQ.jpg"; // Example image path
+import screenshot6 from "./assets/screenshots/HQ.jpg";
 import video6 from "./assets/videos/EmployeeTracker.webm";
 
 // Function component for the 'Home' section of the website
@@ -26,7 +26,6 @@ function Home() {
 function AboutMe() {
   return (
     <div className="about-container">
-      
       <div className="about-me-page">
         <h2>About Me</h2>
         <p>
@@ -48,6 +47,7 @@ function AboutMe() {
   );
 }
 
+// Portfolio projects list 
 const projects = [
   {
     id: 1,
@@ -123,6 +123,7 @@ const projects = [
   },
 ];
 
+// Portfolio section 
 function Portfolio() {
   return (
     <div className="portfolio-page">
