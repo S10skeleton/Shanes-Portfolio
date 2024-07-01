@@ -1,10 +1,10 @@
 /* General Root Styles */
 :root {
   --primary-text-color: #ffffff;
-  --primary-bg-color:  #1f1f1f;
+  --primary-bg-color:  #1f1f1f, 0.5;
   --accent-color: #ffffff;
   --hover-accent-color: #6e0000;
-  --button-color: rgb(0, 0, 0);
+  --button-color: rgb(0, 0, 0, 0.85);
   --box-shadow-color: 3px 4px 10px rgb(68, 0, 0);
   font-family: 'Share Tech Mono',Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -139,7 +139,7 @@ footer {
 
 .home-text {
   font-size: 40px;
-  background-color: black;
+  background-color: var(--button-color);
   padding: 15px;
   max-width: 220px;
   border-radius: 15px;
@@ -168,7 +168,7 @@ footer {
 }
 
 .portfolio-page h2 {
-  background-color: black;
+  background-color: var(--button-color);
   padding: 15px;
   max-width: 100%;
   border-radius: 15px;
@@ -208,6 +208,9 @@ footer {
   color: rgb(69, 69, 155);
   cursor: pointer;
   margin-left: 5px;
+  font-weight: bolder;
+  background-color: black;
+  border-radius: 10px;
 }
 .portfolio-item .media-container {
   position: relative;
@@ -289,13 +292,13 @@ p {
   box-shadow: var(--box-shadow-color);
   border: 1px solid #130041;
   border-radius: 25px;
-  background-color: black;
+  background-color: var(--button-color);
   padding: 25px;
   padding-top: 5px;
   text-align: center;
 }
 .resume-page h3 {
-  background-color: black;
+  background-color: var(--button-color);
   padding: 15px;
   max-width: 100px;
   border-radius: 15px;
