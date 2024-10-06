@@ -10,7 +10,7 @@ import screenshot4 from "./assets/screenshots/Voltmon1.png";
 import video4 from "./assets/videos/EmployeeTracker.webm";
 import screenshot5 from "./assets/screenshots/Fiero2.jpg";
 import video5 from "./assets/videos/EmployeeTracker.webm";
-import screenshot6 from "./assets/screenshots/HQ.jpg";
+import screenshot6 from "./assets/screenshots/SnakeAI.png";
 import video6 from "./assets/videos/EmployeeTracker.webm";
 
 // Function component for the 'Home' section of the website
@@ -95,9 +95,9 @@ const projects = [
   },
   {
     id: 6,
-    title: "Smart Entertainment Command Center",
+    title: "AI Snake Game",
     description:
-      "I designed and built this custom entertainment and work station from scratch, combining functionality with aesthetics. The station features a steel frame and particle board panels, ensuring both durability and stability. It is fully motorized, allowing the 65-inch TV to tilt and travel vertically from the desk to the ceiling, all controlled through a convenient app on my phone.The LED lighting system is powered by ESP32 boards and WLED, providing customizable ambient lighting. For audio, I incorporated two 12-inch subwoofers connected to a car amplifier, delivering powerful bass for movies and immersive vibrations for video games. To enhance the overall look, I wrapped the structure in carbon fiber and brushed steel vinyl wrap, while the tops are covered in neoprene for a sleek, professional finish. This setup not only allows me to work efficiently at my desk but also provides an exceptional entertainment experience for watching movies and gaming.",
+      "This project implements a classic Snake game with an AI agent trained using Reinforcement Learning (RL) to play the game autonomously. The AI learns by playing multiple iterations of the game, optimizing its strategy based on rewards and penalties. The project is divided into two main components: 1. Game: The classic Snake game implemented in Python. 2. AI Agent: A Deep Q-Network (DQN) based agent that learns to play the game..",
     screenshot: screenshot6,
     video: video6,
   },
@@ -150,7 +150,7 @@ function PortfolioItem({ project }) {
       <p className="project-description">
         {showFullDescription
           ? project.description
-          : `${project.description.substring(0, 170)}...`}
+          : `${project.description.substring(0, 200)}...`}
         <span className="more-link" onClick={toggleDescription}>
           {showFullDescription ? " Show less" : " Show more..."}
         </span>
