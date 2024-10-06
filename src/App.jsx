@@ -37,7 +37,7 @@ function AboutMe() {
           high-quality, reliable results. I am committed to creativity,
           collaboration, and exceeding customer expectations. Always eager to
           learn new technologies, I strive to achieve what others deem
-          impossible.
+          impossible. 
         </p>
       </div>
       <div className="selfie">
