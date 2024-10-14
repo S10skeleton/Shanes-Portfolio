@@ -215,6 +215,12 @@ footer {
 .portfolio-item .media-container {
   position: relative;
 }
+
+.project-video {
+  width: 100%;
+  border-radius: 10px;
+}
+
 .static-img {
   width: 100%;
   border-radius: 10px;

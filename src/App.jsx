@@ -1,12 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Styles/Styles.css";
 import screenshot1 from "./assets/screenshots/myflixscreenshot.png";
-import video1 from "./assets/videos/EmployeeTracker.webm";
+import video1 from "./assets/videos/MyFlix.mp4";
 import screenshot2 from "./assets/screenshots/Wags.png";
 import video2 from "./assets/videos/EmployeeTracker.webm";
 import screenshot3 from "./assets/screenshots/Dashboard.png";
 import video3 from "./assets/videos/EmployeeTracker.webm";
-import screenshot4 from "./assets/screenshots/Voltmon1.png";
+import screenshot4 from "./assets/screenshots/Coats.png";
 import video4 from "./assets/videos/EmployeeTracker.webm";
 import screenshot5 from "./assets/screenshots/Fiero2.jpg";
 import video5 from "./assets/videos/EmployeeTracker.webm";
@@ -60,15 +60,7 @@ const projects = [
   },
   {
     id: 2,
-    title: "Wags to Riches",
-    description:
-      "Wags to Riches is a comprehensive pet adoption platform designed to simplify the process of finding and adopting pets. Utilizing a web API, this application provides an up-to-date list of available dogs and cats, offering basic information for each pet. Clicking on a pet's picture navigates to a detailed page with additional information and direct links to the adoption location, streamlining the adoption process. The goal of Wags to Riches is to make it easier to find adoptable animals beyond local sources, enhancing accessibility and convenience for potential pet owners.",
-    screenshot: screenshot2,
-    video: video2,
-    link: "https://github.com/S10skeleton/Wags-to-Riches",
-  },
-  {
-    id: 3,
+
     title: "Daily Dashboard",
     description:
       "The Software Developer's Daily Dashboard is a single-page web application designed to streamline a developer's daily routine. It features a daily planner for scheduling events, a weather forecast for your location, and a YouTube API integration for listening to music while planning your day. Additionally, the background image changes based on the time of day, the dashboard includes an API that accesses your GitHub repositories, providing quick and easy access to your projects. This application is a comprehensive tool to enhance productivity and organization for software developers.",
@@ -77,10 +69,20 @@ const projects = [
     link: "https://daydash.netlify.app/",
   },
   {
-    id: 4,
-    title: "VoltMon Self-Contained Voltage Monitoring Devices",
+    id: 3,
+    title: "Wags to Riches",
     description:
-      "I developed self-contained voltage monitoring devices using Arduino components to track the voltage of my motorcycle, jet ski, ATV, camper, truck, and car. The setup includes two alligator leads connecting the battery terminals to the voltage meter board. A buck converter reduces the 12-volt feed to 3.3 volts for the ESP-01 module. This voltage meter sends the current vehicle voltage via the ESP-01 WiFi board to a custom app on my phone and smart home server, integrated with the Home Assistant OS. By implementing a sleep and awake function, I reduced the parasitic draw from the device to 26.85 μW, ensuring minimal battery drain.",
+      "Wags to Riches is a comprehensive pet adoption platform designed to simplify the process of finding and adopting pets. Utilizing a web API, this application provides an up-to-date list of available dogs and cats, offering basic information for each pet. Clicking on a pet's picture navigates to a detailed page with additional information and direct links to the adoption location, streamlining the adoption process. The goal of Wags to Riches is to make it easier to find adoptable animals beyond local sources, enhancing accessibility and convenience for potential pet owners.",
+    screenshot: screenshot2,
+    video: video2,
+    link: "https://github.com/S10skeleton/Wags-to-Riches",
+
+  },
+  {
+    id: 4,
+    title: "Coats Employee Dashboard",
+    description:
+      "At Coats Inc., I modernized an existing web application using Microsoft ASP.NET and IIS 8.5. The project involved enhancing the company dashboard by streamlining the user experience and improving functionality. I utilized TypeScript and GraphQL, along with libraries like Apollo, Day.js, jQuery UI, and Bootstrap, to create a more dynamic and responsive interface, ensuring the application met current industry standards.",
     screenshot: screenshot4,
     video: video4,
   },
@@ -138,25 +140,35 @@ function Portfolio() {
 }
 
 function PortfolioItem({ project }) {
-  const [showFullDescription, setShowFullDescription] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
-  const toggleDescription = () => {
-    setShowFullDescription((prev) => !prev);
+  const handleMouseEnter = () => {
+    if (project.video) {
+      setIsHovered(true);
+    }
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
   };
 
   return (
-    <div className="portfolio-item">
+    <div
+      className="portfolio-item"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <h3>{project.title}</h3>
       <p className="project-description">
-        {showFullDescription
-          ? project.description
-          : `${project.description.substring(0, 200)}...`}
-        <span className="more-link" onClick={toggleDescription}>
-          {showFullDescription ? " Show less" : " Show more..."}
-        </span>
+        {project.description.substring(0, 200)}...
+        <span className="more-link"> Show more...</span>
       </p>
       <div className="media-container">
-        <img src={project.screenshot} className="static-img" />
+        {isHovered && project.video ? (
+          <video src={project.video} autoPlay muted loop className="project-video" />
+        ) : (
+          <img src={project.screenshot} alt={project.title} className="static-img" />
+        )}
         {project.link && (
           <a
             href={project.link}
