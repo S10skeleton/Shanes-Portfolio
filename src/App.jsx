@@ -2,16 +2,16 @@ import React, { useEffect, useRef, useState } from "react";
 import "./Styles/Styles.css";
 import screenshot1 from "./assets/screenshots/myflixscreenshot.png";
 import video1 from "./assets/videos/MyFlix.mp4";
-import screenshot2 from "./assets/screenshots/Wags.png";
-import video2 from "./assets/videos/EmployeeTracker.webm";
-import screenshot3 from "./assets/screenshots/Dashboard.png";
-import video3 from "./assets/videos/EmployeeTracker.webm";
+import screenshot2 from "./assets/screenshots/Dashboard.png";
+import video2 from "./assets/videos/Dashboard.mp4";
+import screenshot3 from "./assets/screenshots/Wags.png";
+import video3 from "./assets/videos/Wags.mp4";
 import screenshot4 from "./assets/screenshots/Coats.png";
-import video4 from "./assets/videos/EmployeeTracker.webm";
+import video4 from "./assets/videos/Coats.mp4";
 import screenshot5 from "./assets/screenshots/Fiero2.jpg";
-import video5 from "./assets/videos/EmployeeTracker.webm";
+import video5 from "./assets/videos/Bus.mp4";
 import screenshot6 from "./assets/screenshots/SnakeAI.png";
-import video6 from "./assets/videos/EmployeeTracker.webm";
+import video6 from "./assets/videos/Snake.mp4";
 
 // Function component for the 'Home' section of the website
 function Home() {
@@ -64,8 +64,8 @@ const projects = [
     title: "Daily Dashboard",
     description:
       "The Software Developer's Daily Dashboard is a single-page web application designed to streamline a developer's daily routine. It features a daily planner for scheduling events, a weather forecast for your location, and a YouTube API integration for listening to music while planning your day. Additionally, the background image changes based on the time of day, the dashboard includes an API that accesses your GitHub repositories, providing quick and easy access to your projects. This application is a comprehensive tool to enhance productivity and organization for software developers.",
-    screenshot: screenshot3,
-    video: video3,
+    screenshot: screenshot2,
+    video: video2,
     link: "https://daydash.netlify.app/",
   },
   {
@@ -73,8 +73,8 @@ const projects = [
     title: "Wags to Riches",
     description:
       "Wags to Riches is a comprehensive pet adoption platform designed to simplify the process of finding and adopting pets. Utilizing a web API, this application provides an up-to-date list of available dogs and cats, offering basic information for each pet. Clicking on a pet's picture navigates to a detailed page with additional information and direct links to the adoption location, streamlining the adoption process. The goal of Wags to Riches is to make it easier to find adoptable animals beyond local sources, enhancing accessibility and convenience for potential pet owners.",
-    screenshot: screenshot2,
-    video: video2,
+    screenshot: screenshot3,
+    video: video3,
     link: "https://github.com/S10skeleton/Wags-to-Riches",
 
   },
@@ -141,15 +141,24 @@ function Portfolio() {
 
 function PortfolioItem({ project }) {
   const [isHovered, setIsHovered] = useState(false);
+  const [showFullDescription, setShowFullDescription] = useState(false);
 
   const handleMouseEnter = () => {
     if (project.video) {
       setIsHovered(true);
+      setShowFullDescription(true); // Automatically expand description on hover
     }
   };
 
   const handleMouseLeave = () => {
     setIsHovered(false);
+    if (!showFullDescription) {
+      setShowFullDescription(false); // Keep description collapsed unless user toggles it
+    }
+  };
+
+  const toggleDescription = () => {
+    setShowFullDescription((prev) => !prev);
   };
 
   return (
@@ -160,14 +169,20 @@ function PortfolioItem({ project }) {
     >
       <h3>{project.title}</h3>
       <p className="project-description">
-        {project.description.substring(0, 200)}...
-        <span className="more-link"> Show more...</span>
+        {showFullDescription
+          ? project.description
+          : `${project.description.substring(0, 200)}...`}
+        {!isHovered && (
+          <span className="more-link" onClick={toggleDescription}>
+            {showFullDescription ? " Show less" : " Show more..."}
+          </span>
+        )}
       </p>
       <div className="media-container">
         {isHovered && project.video ? (
           <video src={project.video} autoPlay muted loop className="project-video" />
         ) : (
-          <img src={project.screenshot} alt={project.title} className="static-img" />
+          <img src={project.screenshot} className="static-img" />
         )}
         {project.link && (
           <a
@@ -183,6 +198,7 @@ function PortfolioItem({ project }) {
     </div>
   );
 }
+
 
 // Function component for the Contact page
 function Contact() {
