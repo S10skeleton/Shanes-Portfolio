@@ -205,7 +205,7 @@ function Contact() {
   return (
     <div className="contact-page">
       <h1 className="contacth2">Connect With Me</h1>
-      <a href="mailto:S10skelton@gmail.com">✉️ Email: S10Skeleton@gmail.com</a>
+      <a href="mailto:ShaneTechEng@gmail.com">✉️ Email: S10Skeleton@gmail.com</a>
       <p>📞 Phone: 406-546-6577</p>
       <a className="git" href="https://github.com/S10skeleton">
         🐈‍⬛ Github Profile: S10skeleton
@@ -297,7 +297,7 @@ function Resume() {
           </div>
         </div>
         <div className="main-column">
-          <h4>Management and Soft Skills</h4>
+          <h4>Management</h4>
           <div className="sub-columns">
             <div className="sub-category">
               <h5>Project Management</h5>
