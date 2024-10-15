@@ -205,7 +205,7 @@ function Contact() {
   return (
     <div className="contact-page">
       <h1 className="contacth2">Connect With Me</h1>
-      <a href="mailto:ShaneTechEng@gmail.com">✉️ Email: S10Skeleton@gmail.com</a>
+      <a href="mailto:ShaneTechEng@gmail.com">✉️ Email: ShaneTechEng@gmail.com</a>
       <p>📞 Phone: 406-546-6577</p>
       <a className="git" href="https://github.com/S10skeleton">
         🐈‍⬛ Github Profile: S10skeleton
