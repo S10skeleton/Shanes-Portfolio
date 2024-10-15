@@ -278,7 +278,8 @@ function Resume() {
             <div className="sub-category">
               <h5>Robotics and Automation</h5>
               <ul className="skills-list">
-                <li>Python programming</li>
+                <li>C++ (Modern C++14/17/20) and Python programming</li>
+                <li>AI and simulation tools (PyTorch, TensorFlow)</li>
                 <li>ROS (Robot Operating System)</li>
                 <li>Embedded systems (Arduino, Raspberry Pi)</li>
                 <li>Sensor integration and control systems</li>
