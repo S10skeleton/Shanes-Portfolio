@@ -2,8 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import "./Styles/Styles.css";
 import screenshot1 from "./assets/screenshots/myflixscreenshot.png";
 import video1 from "./assets/videos/MyFlix.mp4";
-import screenshot2 from "./assets/screenshots/Dashboard.png";
-import video2 from "./assets/videos/Dashboard.mp4";
+import screenshot2 from "./assets/screenshots/StockBot.png";
+import video2 from "./assets/videos/StockBot.mp4";
 import screenshot3 from "./assets/screenshots/Wags.png";
 import video3 from "./assets/videos/Wags.mp4";
 import screenshot4 from "./assets/screenshots/Coats.png";
@@ -60,13 +60,12 @@ const projects = [
   },
   {
     id: 2,
-
-    title: "Daily Dashboard",
+    title: "Day Trading AI Bot",
     description:
-      "The Software Developer's Daily Dashboard is a single-page web application designed to streamline a developer's daily routine. It features a daily planner for scheduling events, a weather forecast for your location, and a YouTube API integration for listening to music while planning your day. Additionally, the background image changes based on the time of day, the dashboard includes an API that accesses your GitHub repositories, providing quick and easy access to your projects. This application is a comprehensive tool to enhance productivity and organization for software developers.",
+      "This Trade Bot is a custom-built trading system that uses machine learning to track market trends, quickly manage buy/sell decisions, and incorporate sentiment analysis for a more holistic perspective. By blending real-time data, technical indicators, and reinforcement learning, it continuously refines its strategy to adapt to shifting market conditions. This project provides features like automated data fetching, portfolio tracking, and a comprehensive training dashboard—delivering both insights and hands-on control for active traders.",
     screenshot: screenshot2,
     video: video2,
-    link: "https://daydash.netlify.app/",
+    link: "https://github.com/S10skeleton/Day-Trade-Bot",
   },
   {
     id: 3,
@@ -281,7 +280,7 @@ function Resume() {
                 <li>C++ (Modern C++14/17/20) and Python programming</li>
                 <li>AI and simulation tools (PyTorch, TensorFlow)</li>
                 <li>ROS (Robot Operating System)</li>
-                <li>Embedded systems (Arduino, Raspberry Pi)</li>
+                <li>Embedded systems</li>
                 <li>Sensor integration and control systems</li>
               </ul>
             </div>
