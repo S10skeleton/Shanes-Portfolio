@@ -3,7 +3,7 @@ import "./Styles/Styles.css";
 import screenshot1 from "./assets/screenshots/myflixscreenshot.png";
 import video1 from "./assets/videos/MyFlix.mp4";
 import screenshot2 from "./assets/screenshots/StockBot.png";
-import video2 from "./assets/videos/StockBot.png";
+import video2 from "./assets/videos/StockBot.mp4";
 import screenshot3 from "./assets/screenshots/Wags.png";
 import video3 from "./assets/videos/Wags.mp4";
 import screenshot4 from "./assets/screenshots/Coats.png";
