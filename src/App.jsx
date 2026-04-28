@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import "./Styles/Styles.css";
 import screenshot1 from "./assets/screenshots/myflixscreenshot.png";
 import video1 from "./assets/videos/MyFlix.mp4";
@@ -30,7 +30,7 @@ function AboutMe() {
         <h2>About Me</h2>
         <p>
           As a seasoned entrepreneur with 15 years of experience, I specialize
-          in creating innovative solutions tailored to clients' needs. My
+          in creating innovative solutions tailored to clients&apos; needs. My
           expertise spans CAD design, coding, 3D modeling/printing, physical
           fabrication/prototyping, and Agile methodology. Driven by a passion
           for combining leadership, engineering, and coding to deliver
@@ -151,9 +151,6 @@ function PortfolioItem({ project }) {
 
   const handleMouseLeave = () => {
     setIsHovered(false);
-    if (!showFullDescription) {
-      setShowFullDescription(false); // Keep description collapsed unless user toggles it
-    }
   };
 
   const toggleDescription = () => {

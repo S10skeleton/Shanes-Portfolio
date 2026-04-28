@@ -17,7 +17,7 @@ building user interfaces.
 
 ### Prerequisites
 
-- Node.js and npm (Node Package Manager)
+- Node.js >= 20 and npm
 - Basic understanding of React and JavaScript
 
 ### Installation
@@ -47,7 +47,6 @@ Contributions to enhance this portfolio are welcomed. Please follow these steps:
 3. Commit your Changes (git commit -m 'Add some AmazingFeature')
 4. Push to the Branch (git push origin feature/AmazingFeature)
 5. Open a Pull Request
-License
 
 ## License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
@@ -65,7 +64,7 @@ https://shanes-portfolio.com
 
 ## Contact
 **Name:** Shane Beaman <br>
-**Email:** S10Skeleton@gmail.com <br>
+**Email:** ShaneTechEng@gmail.com <br>
 **Phone:** 406-546-6577 (Call or Text)
 
 
